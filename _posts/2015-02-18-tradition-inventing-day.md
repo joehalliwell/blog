@@ -1,6 +1,7 @@
 ---
-categories: [tradition]
 title: Tradition Inventing Day
+layout: post
+categories: [tradition]
 ---
 Feeling slightly cheated by missing Shrove (AKA Pancake) Tuesday for the fourth
 or fifth year in a row, I’ve decided to take matters into my own hands.

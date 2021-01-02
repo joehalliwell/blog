@@ -1,6 +1,7 @@
 ---
-categories: [moveable-feast,tradition]
 title: Stationery Day
+layout: post
+categories: [moveable-feast,tradition]
 ---
 
 After the success of last year’s Tradition Inventing Day, it’s time again to
