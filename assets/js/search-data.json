@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "An analysis of `clamp_with_grad()`",
+            "content": "Setup . Import the usual libraries and tweak the matplotlib setup . import torch import matplotlib import matplotlib.pyplot as plt from math import pi matplotlib.rcParams[&#39;figure.figsize&#39;] = (8 * 3, 8) . Define a helper function to access the gradient . def get_gradient(f, xs): xs = xs.detach().clone() xs.requires_grad = True ys = f(xs) ys.backward(torch.ones_like(ys)) return xs.grad.detach() x = torch.arange(-2, 2, 0.01) plt.plot(x, torch.sin(x * 5), label=&quot;sin(x)&quot;) plt.plot(x, get_gradient(torch.sin, x * 5), label=&quot;dsin(x)/dx&quot;) plt.legend() . Define clamp_with_grad() . class ClampWithGrad(torch.autograd.Function): @staticmethod def forward(ctx, input, min, max): ctx.min = min ctx.max = max ctx.save_for_backward(input) return input.clamp(min, max) @staticmethod def backward(ctx, grad_in): input, = ctx.saved_tensors return ( grad_in * (grad_in * (input - input.clamp(ctx.min, ctx.max)) &gt;= 0), None, None, ) clamp_with_grad = ClampWithGrad.apply class ClampWithGrad2(torch.autograd.Function): @staticmethod def forward(ctx, input, min, max): ctx.min = min ctx.max = max ctx.save_for_backward(input) return input.clamp(min, max) @staticmethod def backward(ctx, grad_in): input, = ctx.saved_tensors clamped = input.clamp(ctx.min, ctx.max) delta = input - clamped v = torch.where(delta == 0, grad_in, torch.sign(delta)) return (v, None, None) clamp_with_grad2 = ClampWithGrad2.apply . def plot(fn, ax, title): x = torch.arange(-2, 2, 0.01) clamp = lambda x: fn(x, -1, 1) #loss = lambda x: (clamp(x)) ** 2 loss = lambda x: torch.sin(clamp(x) * pi) + 1 ax.plot(x, clamp(x), label=&quot;clamp&quot;, alpha=0.5) ax.plot(x, loss(x), label=&quot;loss&quot;, alpha=0.5) #ax.plot(x, get_gradient(lambda x: 2 * x, clamp(x)), label=&quot;dloss/dclamp&quot; ) #ax.plot(x, get_gradient(lambda x: torch.sin(x * pi), clamp(x)), label=&quot;dloss/dclamp&quot;, alpha=0.5) #ax.plot(x, get_gradient(clamp, x), label=&quot;dclamp/dx&quot;, alpha=0.5) ax.plot(x, get_gradient(loss, x), label=&quot;dloss/dx&quot;, alpha=0.5) ax.legend() ax.title.set_text(title) fig, ax = plt.subplots(ncols=3) plot(torch.clamp, ax[0], &quot;clamp&quot;) plot(clamp_with_grad, ax[1], &quot;clamp_with_grad&quot;) plot(clamp_with_grad2, ax[2], &quot;clamp_with_grad_proposed&quot;) .",
+            "url": "https://www.joehalliwell.com/blog/2022/01/01/clamp-with-grad.html",
+            "relUrl": "/2022/01/01/clamp-with-grad.html",
+            "date": " • Jan 1, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Stationery Day",
             "content": "After the success of last year’s Tradition Inventing Day, it’s time again to devise a fixture for my calendar. . Celebrate Stationery Day by covering your desk in squares of yellow paper. Each square of yellow paper must be inscribed with the rune TAX. . Celebrate Stationery Day by buying a notebook that you’ll never fill. Stationery is the cenotaph for our literary ambitions. . Celebrate Stationery Day by asking your friends, “What’s mightier than the sword?” Your friends must then shout, “THE PEN IS,” or perform a forfeit. . Stationery Day falls on the Friday after Easter. . Image: Father Tim Jones was outraged in a local stationary store. Photo credit: Ross Parry/York Press .",
             "url": "https://www.joehalliwell.com/blog/moveable-feast/tradition/2016/02/18/stationery-day.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Tradition Inventing Day",
             "content": "Feeling slightly cheated by missing Shrove (AKA Pancake) Tuesday for the fourth or fifth year in a row, I’ve decided to take matters into my own hands. . Each year on the 18th of February I will invent a new festival day . The appointed date will take its rightful place in the calendar and be celebrated in the appointed way from that moment until the end of time. . Please join me in celebrating today, Tradition Inventing Day. .",
             "url": "https://www.joehalliwell.com/blog/tradition/2015/02/18/tradition-inventing-day.html",
