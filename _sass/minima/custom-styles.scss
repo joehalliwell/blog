@@ -1,11 +1,67 @@
 /*-----------------------------------*/
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
-@import "minima/fastpages-styles";   
-
-
+//@import "minima/fastpages-styles";
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
-@import "minima/fastpages-dracula-highlight"; 
+//@import "minima/fastpages-dracula-highlight";
+
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;800&family=Gentium+Book+Basic&display=swap");
+
+:root {
+  --main-color: #222;
+  --mark-color: #aaa;
+  --background-color: #fff;
+  --accent-color: #ec005b;
+}
+
+html,
+body,
+.page-content {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  font-family: "Gentium Book Basic", serif;
+  font-size: 20px;
+  line-height: 175%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+.post-title,
+.post-link {
+  font-family: "Eczar", serif !important;
+  font-weight: 400;
+  // padding: 0px;
+  // margin: 0px;
+  // margin-bottom: 1em;
+  // letter-spacing: 0.02em;
+}
+
+.site-header {
+  border: none;
+}
+
+.site-footer {
+  display: none;
+}
+
+a {
+  color: var(--accent-color);
+  // font-weight: bold;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--accent-color);
+}
+
+a.anchor-link {
+  color: #ddd;
+  padding-left: 5px;
+}

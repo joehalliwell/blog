@@ -6,7 +6,7 @@ categories: [markdown]
 title: An Example Markdown Post
 published: false
 ---
-# Example Markdown Post
+A minimal example of using markdown with fastpages.
 
 ## Basic setup
 

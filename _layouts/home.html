@@ -29,7 +29,7 @@ layout: default
   {% assign sticky_posts = ''|split:'' %}
   {% assign non_sticky_posts = '' | split:'' %}
 
- 
+
   {% for gp in grouped_posts %}
     {%- if gp.name == "" -%}
       {% assign non_sticky_posts = gp.items | sort: "date" | reverse %}
@@ -46,18 +46,16 @@ layout: default
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <ul class="post-list">
+    <div class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
         {%- if site.show_image -%}
             {%- include post_list_image_card.html -%}
         {% else %}
             {%- include post_list.html -%}
         {%- endif -%}
-      </li>
       {%- endfor -%}
-    </ul>
+    </div>
 
     {% if site.paginate and site.posts.size > site.paginate %}
       <div class="pager">
