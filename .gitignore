@@ -1,6 +1,6 @@
 docs/
 build/
 _freeze/
-.quarto/
+/.quarto/
 .venv/
 .jupyter_cache/
