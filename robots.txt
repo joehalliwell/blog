@@ -1,1 +1,1 @@
-Sitemap: https://www.joehalliwell.com/blog/sitemap.xml
+Sitemap: https://joehalliwell.github.io/blog/sitemap.xml
