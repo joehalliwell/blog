@@ -1,0 +1,35 @@
+---
+title: Rust CLI tools
+date: "2021-02-07"
+categories: [rust,tools]
+---
+
+The success of Rust as a systems programming language
+has tempted a lot of folks to revisit the traditional UNIX tools
+ecosystem.
+
+Here are six tools that made my `.bashrc`.
+
+## Cargo update
+
+![Cargo install update](cargo-install-update.png)
+
+## Starship
+
+![Starship](starship.png)
+
+## Exa
+
+![Exa](exa.png)
+
+## Broot
+
+![Broot](broot.png)
+
+## Dust
+
+![Dust](dust.png)
+
+## Bat
+
+![Bat](bat.png)
