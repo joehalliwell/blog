@@ -53,56 +53,70 @@
     "href": "index.html",
     "title": "Joe Halliwell",
     "section": "",
-    "text": "Rust CLI tools\n\n\n\n\n\n\n\nrust\n\n\ntools\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2023\n\n\n\n\n\n\n  \n\n\n\n\nAn analysis of clamp_with_grad()\n\n\n\n\n\n\n\npytorch\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n  \n\n\n\n\nStationery Day\n\n\n\n\n\n\n\nmoveable-feast\n\n\ntradition\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2016\n\n\n\n\n\n\n  \n\n\n\n\nTradition Inventing Day\n\n\n\n\n\n\n\ntradition\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2015\n\n\n\n\n\n\nNo matching items"
+    "text": "Renovating the command line\n\n\n\n\n\n\n\nrust\n\n\nunix\n\n\ntools\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\n\n\n\n\n  \n\n\n\n\nAn analysis of clamp_with_grad()\n\n\n\n\n\n\n\npytorch\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n  \n\n\n\n\nStationery Day\n\n\n\n\n\n\n\nmoveable-feast\n\n\ntradition\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2016\n\n\n\n\n\n\n  \n\n\n\n\nTradition Inventing Day\n\n\n\n\n\n\n\ntradition\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2015\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/rust-tools/index.html",
     "href": "posts/rust-tools/index.html",
-    "title": "Rust CLI tools",
+    "title": "Renovating the command line",
     "section": "",
-    "text": "The success of Rust as a systems programming language has tempted a lot of folks to revisit the traditional UNIX tools ecosystem.\nHere are six tools that made my .bashrc."
+    "text": "Many of the UNIX command line tools we use day-to-day date back to the earliest incarnations of UNIX at AT&T in 1970s. Of course, these days we’re mostly using GNU versions1, published under free software licenses and sporting various useful extensions.1 There are many UNIXes that don’t use GNU tools, but… eh… I don’t use them.\nBut these don’t represent much of an evolution of the ancient tools, but rather a respectful conservation effort.\nIn my .bash_aliases, exa has now replaced ls, and cat has yielded to bat. Below, you’ll find six Rust-based command line tools that are now part of my every day carry."
   },
   {
-    "objectID": "posts/rust-tools/index.html#cargo-update",
-    "href": "posts/rust-tools/index.html#cargo-update",
-    "title": "Rust CLI tools",
-    "section": "Cargo update",
-    "text": "Cargo update\n\n\n\nCargo install update"
+    "objectID": "posts/rust-tools/index.html#exa-ls-with-flair",
+    "href": "posts/rust-tools/index.html#exa-ls-with-flair",
+    "title": "Renovating the command line",
+    "section": "Exa: ls with flair",
+    "text": "Exa: ls with flair\nexa is more or less a drop-in replacement for ls with sensible defaults like human-readable file sizes and colour-coding for different file types.\nIt has first-class support for creation/modification/access times and extended filesystem attributes. When integrated with git, exa even indicates the version control status of each file.\nAlso, if you’re using a nerd font it has icons. Everyone loves that.\n\n\n\nExa"
   },
   {
-    "objectID": "posts/rust-tools/index.html#starship",
-    "href": "posts/rust-tools/index.html#starship",
-    "title": "Rust CLI tools",
-    "section": "Starship",
-    "text": "Starship\n\n\n\nStarship"
+    "objectID": "posts/rust-tools/index.html#bat-colourful-cat",
+    "href": "posts/rust-tools/index.html#bat-colourful-cat",
+    "title": "Renovating the command line",
+    "section": "Bat: colourful cat",
+    "text": "Bat: colourful cat\ncat is one of the oldest Unix utilities, dating back to Version 1 Unix. Yes, I nearly always have an editor open, yes less is more suited to long files, and yet I routinely find myself using cat to peek at files.\nbat is a drop-in replacement that behaves like cat in scripts, but adds user-friendly paging, syntax highlighting, git integration and line numbers when outputting to a terminal. Much better.\n\n\n\nBat"
   },
   {
-    "objectID": "posts/rust-tools/index.html#exa",
-    "href": "posts/rust-tools/index.html#exa",
-    "title": "Rust CLI tools",
-    "section": "Exa",
-    "text": "Exa\n\n\n\nExa"
+    "objectID": "posts/rust-tools/index.html#starship-fast-and-fancy-prompt",
+    "href": "posts/rust-tools/index.html#starship-fast-and-fancy-prompt",
+    "title": "Renovating the command line",
+    "section": "Starship: fast and fancy prompt",
+    "text": "Starship: fast and fancy prompt\nDid you ever install some giant shell config framework just to get a cute prompt?\nStarship is a cross-platform prompt, that takes its aesthetic cues and customizability from Zsh’s Spaceship prompt but eclipses it in raw speed. There’s never that clunky pause as hundreds of lines of script are executed just to generate your prompt.\nStarship’s support for customization is inevitably somewhat limited. But its config is simple and declarative and eliminates the need for tweaking complex scripts and baroque environment variables.\nThe default setup looks great – but I’ve added extra bling.\n\n\n\nStarship"
   },
   {
-    "objectID": "posts/rust-tools/index.html#broot",
-    "href": "posts/rust-tools/index.html#broot",
-    "title": "Rust CLI tools",
-    "section": "Broot",
-    "text": "Broot\n\n\n\nBroot"
+    "objectID": "posts/rust-tools/index.html#dust-du-but-useful",
+    "href": "posts/rust-tools/index.html#dust-du-but-useful",
+    "title": "Renovating the command line",
+    "section": "Dust: du but useful",
+    "text": "Dust: du but useful\nIf you’re using du you’re almost certaininly trying to figure out why you’ve run out of disk space. So you’re already annoyed, and if you’re using du it’s about to get worse. du will give you the raw data to work with but you’re going to have to muck around with advanced flags, and probably do some scripting to get your answer.\nIn contrast dust presents information in a visually intuitive tree structure, making it easy to see which files or directories are taking up space. It’s also faster.\n\n\n\nDust"
   },
   {
-    "objectID": "posts/rust-tools/index.html#dust",
-    "href": "posts/rust-tools/index.html#dust",
-    "title": "Rust CLI tools",
-    "section": "Dust",
-    "text": "Dust\n\n\n\nDust"
+    "objectID": "posts/rust-tools/index.html#fd-find-but-usable",
+    "href": "posts/rust-tools/index.html#fd-find-but-usable",
+    "title": "Renovating the command line",
+    "section": "Fd: find but usable",
+    "text": "Fd: find but usable\nfind is notorious for its arcane syntax and sluggishness on large filesystems. fd is a fast and user-friendly alternative whose simple syntax and smart defaults priortize common use cases without losing flexibility. And again it’s damn fast."
   },
   {
-    "objectID": "posts/rust-tools/index.html#bat",
-    "href": "posts/rust-tools/index.html#bat",
-    "title": "Rust CLI tools",
-    "section": "Bat",
-    "text": "Bat\n\n\n\nBat"
+    "objectID": "posts/rust-tools/index.html#cargo-install-and-update-rust-tools",
+    "href": "posts/rust-tools/index.html#cargo-install-and-update-rust-tools",
+    "title": "Renovating the command line",
+    "section": "Cargo: install and update rust tools",
+    "text": "Cargo: install and update rust tools\ncargo is Rust’s package manager and swiss army knife. It can be used to install all of the programs above: a simple ‘cargo install $tool’ fetches, compiles, and places them on your path.\ncargo-update is a cargo extension that detects outdated packages and updates them in one go. This keeps your toolset not just functional, but cutting-edge.\n\n\n\nCargo update"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#closing-thoughts",
+    "href": "posts/rust-tools/index.html#closing-thoughts",
+    "title": "Renovating the command line",
+    "section": "Closing thoughts",
+    "text": "Closing thoughts"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#colophon",
+    "href": "posts/rust-tools/index.html#colophon",
+    "title": "Renovating the command line",
+    "section": "Colophon",
+    "text": "Colophon\nAll screengrabs are from gnome terminal using the Wild Cherry theme from Gogh. The font is FantasqueSansMono NerdFont."
   },
   {
     "objectID": "posts/stationery-day/stationery-day.html",
