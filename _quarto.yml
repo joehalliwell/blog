@@ -22,3 +22,5 @@ format:
     theme:
       - simplex
       - styles.scss
+    toc: true
+    toc-location: left
