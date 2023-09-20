@@ -42,7 +42,11 @@ version control status of each file.
 
 Also, if you're using a nerd font it has icons. Everyone loves that.
 
-![Exa](exa.png)
+![Sample output from `exa` showing more colour and detail than `ls` provides](exa.png)
+
+<!--
+exa --header --group --created --modified --accessed --git --icons --extended --all --long --grid --classify --color-scale
+-->
 
 ## Bat: colourful cat
 
@@ -72,23 +76,25 @@ config is simple and declarative and eliminates the need for tweaking complex
 scripts and baroque environment variables.
 
 The default setup looks great -- but I've added
-[extra bling](https://github.com/joehalliwell/dotfiles/blob/master/.config/starship.toml).
+[extra nerdfont bling](https://github.com/joehalliwell/dotfiles/blob/master/.config/starship.toml).
 
-![Starship](starship.png)
+![Starship showing the currently active prompt elements and associated profiling information](starship.png)
+
 
 ## Dust: du but useful
 
 If you're using `du` you're almost certaininly trying to figure out why you've
-run out of disk space. So you're already annoyed, and if you're using `du` it's
-about to get worse. `du` will give you the raw data to work with but you're
-going to have to muck around with advanced flags, and probably do some scripting
-to get your answer.
+run out of disk space. So you're already annoyed, and it's about to get worse.
+
+`du` will give you raw data on file sizes to work with but you're going to have
+to muck around with advanced flags and probably do some scripting to get your
+answer.
 
 In contrast [`dust`](https://github.com/bootandy/dust) presents information in a
 visually intuitive tree structure, making it easy to see which files or
 directories are taking up space. It's also faster.
 
-![Dust](dust.png)
+![Dust making it abundantly clear that Steam is to blame for that `npm install` failure](dust.png)
 
 <!--
 ## Ripgrep: lightning fast grep
@@ -111,9 +117,14 @@ flexibility. And again it's damn fast.
 
 ## Cargo: install and update rust tools
 
-`cargo` is Rust's package manager and swiss army knife. It can be used to
-install all of the programs above: a simple 'cargo install $tool' fetches,
-compiles, and places them on your path.
+If you're interested in trying the above tools, it's easy to
+[get started with Rust](https://www.rust-lang.org/learn/get-started).
+
+The standard installer will give you a full set of dev tools including `cargo`,
+which is Rust's package manager and swiss army knife.
+
+Cargo can be used to install all of the programs above: a simple 'cargo
+install $tool' fetches, compiles, and places them on your path.
 
 [`cargo-update`](https://github.com/nabijaczleweli/cargo-update) is a `cargo`
 extension that detects outdated packages and updates them in one go. This keeps
@@ -123,7 +134,24 @@ your toolset not just functional, but cutting-edge.
 
 ## Closing thoughts
 
+The Rust CLI tool ecosystem is flourishing. In this post, I covered some tools
+that I use every day, but there are tons of great Rust command line apps that I
+use less frequently[^sharpeyes]. You might also want to check out:
 
+- [bottom](https://github.com/ClementTsang/bottom): cute, cross-platform
+  system monitor
+- [broot](https://github.com/Canop/broot): TUI filesystem navigator with
+  sophisticated preview capabilities
+- [just](https://github.com/casey/just): project-specific command runner
+  &emdash; like `make` but without the baggage
+- [ripgrep](https://github.com/Canop/broot): fast content search with an
+  intuitive interface
+- [tokei](https://github.com/XAMPPRocky/tokei): fast alternative to `sloccount`
+  for counting lines of code
+
+
+[^sharpeyes]: You can see some of these in the `cargo install-update`
+shot above
 
 ## Colophon
 

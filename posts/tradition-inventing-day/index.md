@@ -1,7 +1,7 @@
 ---
 title: Tradition Inventing Day
 date: "2015-02-18"
-categories: [tradition]
+categories: [tradition inventing day]
 ---
 
 Feeling slightly cheated by missing Shrove (AKA Pancake) Tuesday for the fourth
