@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://joehalliwell.com/about.html</loc>
-    <lastmod>2023-09-20T19:14:43.732Z</lastmod>
+    <lastmod>2023-09-20T19:16:06.927Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joehalliwell.com/posts/rust-tools/index.html</loc>
+    <lastmod>2023-09-20T19:16:05.855Z</lastmod>
   </url>
   <url>
     <loc>https://joehalliwell.com/index.html</loc>
-    <lastmod>2023-09-20T19:14:40.852Z</lastmod>
+    <lastmod>2023-09-20T19:16:05.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joehalliwell.com/posts/tradition-inventing-day/index.html</loc>
+    <lastmod>2023-09-20T19:16:05.463Z</lastmod>
   </url>
   <url>
     <loc>https://joehalliwell.com/posts/clamp-with-grad.html</loc>
-    <lastmod>2023-09-20T19:14:42.620Z</lastmod>
+    <lastmod>2023-09-20T19:16:06.207Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joehalliwell.com/posts/stationery-day/index.html</loc>
+    <lastmod>2023-09-20T19:16:06.707Z</lastmod>
   </url>
 </urlset>

@@ -7,11 +7,81 @@
     "text": "About this blog"
   },
   {
+    "objectID": "posts/rust-tools/index.html",
+    "href": "posts/rust-tools/index.html",
+    "title": "Renovating the command line",
+    "section": "",
+    "text": "Many of the UNIX command line tools we use day-to-day date back to the earliest incarnations of UNIX at AT&T in 1970s. Of course, these days we’re mostly using GNU versions1, published under free software licenses and sporting various useful extensions.1 There are many UNIXes that don’t use GNU tools, but… eh… I don’t use them.\nBut these don’t represent much of an evolution of the ancient tools, but rather a respectful conservation effort.\nIn my .bash_aliases, exa has now replaced ls, and cat has yielded to bat. Below, you’ll find six Rust-based command line tools that are now part of my every day carry."
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#exa-ls-with-flair",
+    "href": "posts/rust-tools/index.html#exa-ls-with-flair",
+    "title": "Renovating the command line",
+    "section": "Exa: ls with flair",
+    "text": "Exa: ls with flair\nexa is more or less a drop-in replacement for ls with sensible defaults like human-readable file sizes and colour-coding for different file types.\nIt has first-class support for creation/modification/access times and extended filesystem attributes. When integrated with git, exa even indicates the version control status of each file.\nAlso, if you’re using a nerd font it has icons. Everyone loves that.\n\n\n\nSample output from exa showing more colour and detail than ls provides"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#bat-colourful-cat",
+    "href": "posts/rust-tools/index.html#bat-colourful-cat",
+    "title": "Renovating the command line",
+    "section": "Bat: colourful cat",
+    "text": "Bat: colourful cat\ncat is one of the oldest Unix utilities, dating back to Version 1 Unix. Yes, I nearly always have an editor open, yes less is more suited to long files, and yet I routinely find myself using cat to peek at files.\nbat is a drop-in replacement that behaves like cat in scripts, but adds user-friendly paging, syntax highlighting, git integration and line numbers when outputting to a terminal. Much better.\n\n\n\nBat"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#starship-fast-and-fancy-prompt",
+    "href": "posts/rust-tools/index.html#starship-fast-and-fancy-prompt",
+    "title": "Renovating the command line",
+    "section": "Starship: fast and fancy prompt",
+    "text": "Starship: fast and fancy prompt\nDid you ever install some giant shell config framework just to get a cute prompt?\nStarship is a cross-platform prompt, that takes its aesthetic cues and customizability from Zsh’s Spaceship prompt but eclipses it in raw speed. There’s never that clunky pause as hundreds of lines of script are executed just to generate your prompt.\nStarship’s support for customization is inevitably somewhat limited. But its config is simple and declarative and eliminates the need for tweaking complex scripts and baroque environment variables.\nThe default setup looks great – but I’ve added extra nerdfont bling.\n\n\n\nStarship showing the currently active prompt elements and associated profiling information"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#dust-du-but-useful",
+    "href": "posts/rust-tools/index.html#dust-du-but-useful",
+    "title": "Renovating the command line",
+    "section": "Dust: du but useful",
+    "text": "Dust: du but useful\nIf you’re using du you’re almost certaininly trying to figure out why you’ve run out of disk space. So you’re already annoyed, and it’s about to get worse.\ndu will give you raw data on file sizes to work with but you’re going to have to muck around with advanced flags and probably do some scripting to get your answer.\nIn contrast dust presents information in a visually intuitive tree structure, making it easy to see which files or directories are taking up space. It’s also faster.\n\n\n\nDust making it abundantly clear that Steam is to blame for that npm install failure"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#fd-find-but-usable",
+    "href": "posts/rust-tools/index.html#fd-find-but-usable",
+    "title": "Renovating the command line",
+    "section": "Fd: find but usable",
+    "text": "Fd: find but usable\nfind is notorious for its arcane syntax and sluggishness on large filesystems. fd is a fast and user-friendly alternative whose simple syntax and smart defaults priortize common use cases without losing flexibility. And again it’s damn fast."
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#cargo-install-and-update-rust-tools",
+    "href": "posts/rust-tools/index.html#cargo-install-and-update-rust-tools",
+    "title": "Renovating the command line",
+    "section": "Cargo: install and update rust tools",
+    "text": "Cargo: install and update rust tools\nIf you’re interested in trying the above tools, it’s easy to get started with Rust.\nThe standard installer will give you a full set of dev tools including cargo, which is Rust’s package manager and swiss army knife.\nCargo can be used to install all of the programs above: a simple ‘cargo install $tool’ fetches, compiles, and places them on your path.\ncargo-update is a cargo extension that detects outdated packages and updates them in one go. This keeps your toolset not just functional, but cutting-edge.\n\n\n\nCargo update"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#closing-thoughts",
+    "href": "posts/rust-tools/index.html#closing-thoughts",
+    "title": "Renovating the command line",
+    "section": "Closing thoughts",
+    "text": "Closing thoughts\nThe Rust CLI tool ecosystem is flourishing. In this post, I covered some tools that I use every day, but there are tons of great Rust command line apps that I use less frequently3. You might also want to check out:3 You can see some of these in the cargo install-update shot above\n\nbottom: cute, cross-platform system monitor\nbroot: TUI filesystem navigator with sophisticated preview capabilities\njust: project-specific command runner &emdash; like make but without the baggage\nripgrep: fast content search with an intuitive interface\ntokei: fast alternative to sloccount for counting lines of code"
+  },
+  {
+    "objectID": "posts/rust-tools/index.html#colophon",
+    "href": "posts/rust-tools/index.html#colophon",
+    "title": "Renovating the command line",
+    "section": "Colophon",
+    "text": "Colophon\nAll screengrabs are from gnome terminal using the Wild Cherry theme from Gogh. The font is FantasqueSansMono NerdFont."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Joe Halliwell",
     "section": "",
-    "text": "An analysis of clamp_with_grad()\n\n\n\n\n\n\n\npytorch\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\nNo matching items"
+    "text": "Ordinal regression with huggingface transformers\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nRenovating the command line\n\n\n\n\n\n\n\nrust\n\n\nunix\n\n\ntools\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\n\n\n\n\n  \n\n\n\n\nAn analysis of clamp_with_grad()\n\n\n\n\n\n\n\npytorch\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n  \n\n\n\n\nStationery Day\n\n\n\n\n\n\n\nmoveable feast\n\n\ntradition inventing day\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2016\n\n\n\n\n\n\n  \n\n\n\n\nTradition Inventing Day\n\n\n\n\n\n\n\ntradition inventing day\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2015\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/tradition-inventing-day/index.html",
+    "href": "posts/tradition-inventing-day/index.html",
+    "title": "Tradition Inventing Day",
+    "section": "",
+    "text": "Feeling slightly cheated by missing Shrove (AKA Pancake) Tuesday for the fourth or fifth year in a row, I’ve decided to take matters into my own hands.\nEach year on the 18th of February I will invent a new festival day . The appointed date will take its rightful place in the calendar and be celebrated in the appointed way from that moment until the end of time.\nPlease join me in celebrating today, Tradition Inventing Day.\n\n\n\nA traditional greeting card for Tradition Inventing Day"
   },
   {
     "objectID": "posts/clamp-with-grad.html",
@@ -47,5 +117,12 @@
     "title": "An analysis of clamp_with_grad()",
     "section": "Define clamp_with_grad()",
     "text": "Define clamp_with_grad()\nVarious folks have proposed the following approach to addressing this, by providing a pseudo-derivative outside the clamped interval:\n\nclass ClampWithGrad(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, input, min, max):\n        ctx.min = min\n        ctx.max = max\n        ctx.save_for_backward(input)\n        return input.clamp(min, max)\n\n    @staticmethod\n    def backward(ctx, grad_in):\n        input, = ctx.saved_tensors\n        return (\n            grad_in * (grad_in * (input - input.clamp(ctx.min, ctx.max)) &gt;= 0),\n            None,\n            None,\n        )\n\nclamp_with_grad = ClampWithGrad.apply\n\n\nfig, ax = plt.subplots(ncols=2, figsize=(FIGSIZE*2, FIGSIZE))\nplot(torch.clamp, ax[0], \"clamp\")\nplot(clamp_with_grad, ax[1], \"clamp_with_grad\")"
+  },
+  {
+    "objectID": "posts/stationery-day/index.html",
+    "href": "posts/stationery-day/index.html",
+    "title": "Stationery Day",
+    "section": "",
+    "text": "Father Tim Jones was outraged in a local stationary store. Photo credit: Ross Parry/York Press\n\n\nAfter the success of last year’s Tradition Inventing Day, it’s time again to devise a fixture for my calendar.\nCelebrate Stationery Day by covering your desk in squares of yellow paper. Each square of yellow paper must be inscribed with the rune TAX.\nCelebrate Stationery Day by buying a notebook that you’ll never fill. Stationery is the cenotaph for our literary ambitions.\nCelebrate Stationery Day by asking your friends, “What’s mightier than the sword?” Your friends must then shout, “THE PEN IS,” or perform a forfeit.\nStationery Day falls on the Friday after Easter."
   }
 ]
