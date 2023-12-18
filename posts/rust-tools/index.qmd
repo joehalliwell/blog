@@ -2,6 +2,7 @@
 title: Renovating the command line
 date: "2023-09-10"
 categories: [rust,unix,tools]
+draft: false
 ---
 
 Many of the UNIX command line tools we use day-to-day date back to the earliest

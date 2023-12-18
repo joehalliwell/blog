@@ -2,6 +2,7 @@
 title: Stationery Day
 date: "2016-02-18"
 categories: [moveable feast,tradition inventing day]
+draft: false
 ---
 
 ![Father Tim Jones was outraged in a local stationary store. Photo credit: Ross Parry/York Press](father-tim-jones.jpg)
