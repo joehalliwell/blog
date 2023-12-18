@@ -9,8 +9,8 @@ incarnations of UNIX at AT&T in 1970s. Of course, these days we're mostly
 using GNU versions[^gnu], published under free software licenses and sporting
 various useful extensions.
 
-But these don't represent much of an evolution of the ancient tools, but rather
-a respectful conservation effort.
+However these don't represent much of an evolution of the ancient tools, but
+rather a respectful effort to conserve them.
 
 [^gnu]: There are many UNIXes that don't use GNU tools, but... eh... I don't use
 them.

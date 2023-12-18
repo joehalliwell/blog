@@ -1,5 +1,8 @@
 # options specified here will apply to all posts in this folder
 
+# Draft by default
+draft: true
+
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: true
@@ -12,4 +15,3 @@ title-block-banner: true
 
 fig-cap-location: margin
 reference-location: margin
-draft: false
