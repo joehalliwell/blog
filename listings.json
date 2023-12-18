@@ -2,11 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/ordinal-regression.html",
-      "/posts/rust-tools/index.html",
-      "/posts/clamp-with-grad.html",
-      "/posts/stationery-day/index.html",
-      "/posts/tradition-inventing-day/index.html"
+      "/posts/clamp-with-grad.html"
     ]
   }
 ]
