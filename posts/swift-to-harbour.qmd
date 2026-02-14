@@ -14,7 +14,7 @@ So what's changed?
 
 ## The paradigm shift in AI Safety research
 
-The philosopher Nick Bostrom's recent working paper, [Optimal Timing for Superintelligence](https://nickbostrom.com/optimal.pdf) centres on a (soi-disant "mundane" — his term for considerations that don't involve simulation theory or digital minds) back-of-the-envelope utility calculation. He reminds us that pausing AI research indefinitely is not morally neutral: he estimates that 170,000 people per day die from "disease, aging and other tragedies", that advanced AI could eliminate.
+The philosopher Nick Bostrom's recent working paper, [Optimal Timing for Superintelligence](https://nickbostrom.com/optimal.pdf) centres on a back-of-the-envelope utility calculation. He reminds us that pausing AI research indefinitely is not morally neutral: he estimates that 170,000 people per day die from "disease, aging and other tragedies", that advanced AI could eliminate.
 
 So far, so trolley problem.
 
