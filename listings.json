@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/swift-to-harbour.html",
       "/posts/rust-tools/index.html",
       "/posts/clamp-with-grad.html",
       "/posts/stationery-day/index.html",
