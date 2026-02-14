@@ -1,0 +1,6 @@
+---
+title: Hypersentimentalism
+date: "2026-02-16"
+categories: [ethics, ai]
+draft: true
+---
