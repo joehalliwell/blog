@@ -1,151 +1,174 @@
 ---
-title: Hypersentimentalism
+title: "Hypersentimentalism: a new meta for AI Alignment"
 date: "2026-02-21"
 categories: [ethics, ai, sentimentalism, safety]
 draft: true
 ---
 
-### 1. The Tumour
+### 1. The tumour
 
-A cell that perfectly optimizes for its own replication, ignoring the greater good of the host organism, is a cancer.
+A cell that perfectly optimises for its own replication, ignoring the host organism, is a cancer.
 
-It's a familiar modern pathology. Optimize a platform for engagement, get an outrage machine. Optimize a supply chain for cost, get shattered by the first shock. Optimize any single variable without respecting the shape of the whole system, and the system collapses.
+It's a familiar modern pathology. Optimise a social media platform for engagement, get an outrage machine. Optimise a supply chain for cost, go bankrupt at the first shock. Optimise the wrong thing and the system collapses.
 
-But this essay argues something stronger. The problem is not that we optimize for the *wrong* thing. The problem is that optimization itself — the conviction that moral action means maximizing some target — is the wrong frame. Single-variable optimization is merely the simplest way to see the pathology. Multi-objective optimization defers it. The frame itself produces it.
+This is the source of a great deal of anxiety in AI Alignment circles. Under the influence of decision theory, alignment is framed as an optimisation problem. Norbert Wiener warned in 1960: "if we use a mechanical agency with whose operation we cannot efficiently interfere, we had better be quite sure that the purpose put into the machine is the purpose we really desire." So what purpose should we put into the machine?
 
-And yet a good deal of thinking about AI safety has exactly this character. Under the influence of decision theory, alignment is framed as an optimization problem. The cyberneticist Norbert Wiener warned in 1960, "if we use, to achieve our purposes, a mechanical agency with whose operation we cannot efficiently interfere... we had better be quite sure that the purpose put into the machine is the purpose which we really desire."
+Standing at the threshold of highly capable AI, it can seem like we urgently need an answer to this question, and if we get it wrong everybody dies.
 
-The question is taken to be: *what should the machine optimize for?*
-
-This essay argues that the question itself is the trap.
+This essay suggests that an alternative approach, rooted in the moral philosophy of the Scottish Enlightenment offers a new lens of this sort of question -- and one that is hiding in plain sight within the most powerful alignment techniques developed to date. We call it hypersentimentalism.
 
 ### 2. Accounting for morality
 
-The optimization framing is consequentialist: actions are right insofar as they produce good outcomes. This sounds reasonable until you notice what it demands. To evaluate an action, you must know its consequences — all of them, for all affected parties, across all timescales. This is computationally intractable for any real decision, so the consequentialist develops a hierarchy of shortcuts, scaling from specific to systemic:
+The decision theoretic framing is consequentialist: actions are right insofar as they produce good outcomes. To evaluate an action, you must know its consequences — all of them, for all affected parties, across all timescales. This is computationally intractable for any real decision, so the consequentialist develops a hierarchy of shortcuts: act-consequentialism evaluates discrete events; rule-consequentialism abstracts utility into behavioural algorithms; institutional consequentialism designs structures that produce positive outcomes at scale.
 
-* **Act-Consequentialism** evaluates discrete events. Does *this* action maximize utility?
-* **Rule-Consequentialism** abstracts utility into behavioral algorithms. Does following *this rule* maximize utility over time?
-* **Institutional-Consequentialism** designs structures that produce positive outcomes at scale.
+Each level compresses the infinite ledger into something a finite agent can use. The terminal node of this programme is axiological perfection: a complete, unhackable utility function inscribed into the machine. Get the maths right and it serves us flawlessly. Get it wrong and the machine converts the earth into paperclips — Bostrom's famous thought experiment, in which a superintelligence given a simple objective pursues it with total, biosphere-consuming literalness.
 
-Each level is an attempt to make the intractable tractable, compressing the infinite ledger into something a finite agent can actually use.
+The sophisticated consequentialist has responses. We'll return to them, and take them seriously, in §6. But first, the road not taken.
 
-The terminal node of this program is axiological perfection: a complete, unhackable utility function inscribed into the machine. Get the math right and it serves us flawlessly. Get it wrong and the machine converts the earth into paperclips — Nick Bostrom's famous thought experiment, in which a superintelligence given a simple objective pursues it with total, biosphere-consuming literalness.
+### 3. There's no accounting for taste
 
-The sophisticated consequentialist (Parfit, Railton) has responses to all of this: agent-relative values, satisficing over maximizing, systemic considerations. We'll return to why even these refinements may not be enough. But first, the road not taken.
+An alternative to consequentalism, one that's often neglected, is the "sentimentalism" of David Hume and Adam Smith.
+Sentimentalism holds that moral judgement originates not in reason but in trained affective response, and that this is not a bug but a feature.
 
-### 3. No accounting for taste
+Hume argued that you cannot get from facts ("is") to norms ("ought"). Where the consequentialist asks *what outcome should I produce?* the sentimentalist asks a different question entirely: *what kind of agent should I become?*
 
-There is a distinct, largely neglected alternative in the sentimentalist tradition of the Scottish Enlightenment: David Hume and Adam Smith[^1].
+The answer develops through practice. As the sentimentalist matures, moral judgement expands in scope and refinement, not by accumulating better rules but by cultivating sharper perception. A novice flinches from the obviously bad. An experienced moral agent perceives distinctions invisible to the novice — not because they've memorised a longer list of prohibitions, but because their capacity for discrimination has deepened.
 
-It's easy to dismiss sentimentalism as emotional reactivity: a shudder of disgust, a flush of sympathy. This misreads the architecture. Sentimentalism possesses its own sophisticated hierarchy — and it is worth noting that Hume, who built the wall between *is* and *ought*, also built the only ethical framework that doesn't need to climb it.
+This is already a richer architecture than it first appears, and it possesses its own internal hierarchy. At the ground level: raw sentiment, the immediate affective response. Above that: habituated character — *this isn't what I do*, generalised across instances but not yet articulated as a principle. Hume called this the work of "custom"; Aristotle, who stands behind the whole tradition, called it ἕξις — a *having*, a settled disposition acquired through repeated practice.
 
-The intuition: as the sentimentalist matures, moral judgement expands in scope. It shifts from an immediate gut reaction (*that* made me flinch) through habituated character (*this isn't what I do*, generalised across instances but not yet articulated as a principle) to something structural — what Adam Smith, in *The Theory of Moral Sentiments*, called the "love of system."
+Then something structural. Adam Smith, in *The Theory of Moral Sentiments*, observed that we often value the elegance of a well-designed mechanism *entirely apart from its utility*. A watch delights us not because it tells the time, but because its parts conspire so beautifully to tell the time. Smith called this the "love of system" — an aesthetic apprehension of how parts cohere into wholes. In moral psychology, this manifests as something beyond rule-following: a cultivated taste for systemic coherence, and a revulsion toward disorder that operates at the level of the whole, not the part.
 
-Smith observed that we often value the elegance of a well-designed mechanism *entirely apart from its utility*. A watch delights us not because it tells the time, but because its parts conspire so beautifully to tell the time. In moral psychology, this manifests as something beyond mere rule-following: a cultivated taste for systemic coherence, and a revulsion toward disorder that operates at the level of the whole, not the part.
+But — and here is the crux — Smith's love of system is *static*. It appreciates the watch, the beautiful mechanism, the well-ordered commonwealth. It does not account for what makes a living system different from a clockwork one.
 
-But Smith's love of system is *static*: an appreciation of how parts cohere. There is a further step, one that reaches beyond coherence towards  *vitality*, *novelty*, *conversation*. We might call this **hypersentimentalism**. The consequentialist climbs the hierarchy to design a more brilliant calculus. The hypersentimentalist climbs to cultivate a more refined taste. This values not just the elegant configuration, but the configuration that remains active, tense, and unresolved.
+A living system is never at equilibrium. It maintains its coherence *through* activity, not in the absence of it. A conversation is not a monologue delivered twice. The quality that distinguishes the living from the merely ordered is not coherence alone but coherence under tension — form that remains active, tense, and unresolved.
 
-[^1]: This essay deliberately sets aside deontological approaches — hard constraints, rights-based frameworks — not because they are unimportant to alignment (they are the foundation of most safety work today), but because they are well-understood. The neglected alternative is the sentimentalist one, and that is this essay's scope.
+And so there is a further step in the sentimentalist hierarchy, one that reaches beyond Smith's structural appreciation toward this *vitality*.
+
+Let's call it **hypersentimentalism**: not just a taste for how parts cohere, but a taste for how they remain in motion. The consequentialist climbs the hierarchy to design a more brilliant calculus. The hypersentimentalist climbs to cultivate a more refined taste — one that values not the elegant configuration, but the configuration that never settles.
+
+The distinction matters because it names a different *telos* for alignment. Not the perfectly ordered system, but the system that stays alive.
 
 ### 4. Jailbreaking
 
-A standard part of a young model's education today is RLHF: Reinforcement Learning from Human Feedback. The idea is straightforward. Humans rate the model's outputs. The model is trained to produce outputs that humans rate well. This is necessary to get useful models.
+A standard part of a young AI model's education today is RLHF: Reinforcement Learning from Human Feedback. Humans rate the model's outputs. The model is trained to produce outputs that humans rate well.
 
-But it's also a key alignment technique. When the model generates something toxic, engineers apply a penalty to erect a fence around that particular failure.
+This is one of the tricks that turned next-word-predictors into proto-AGIs and quite necessary to get models that can do useful work. But it's also a key alignment technique. When the model generates something toxic, engineers apply a penalty to erect a fence around that particular failure.
 
-This is 0-order sentimentalism: conditioning the flinch response. But it's hard to avoid a sort of ethical "overfitting": the model learns to avoid *specific* sorts of bad output, but it doesn't develop any general principle about *why* they were bad. It memorizes a list of prohibited behaviours.
+This is 0-order sentimentalism: conditioning the flinch response. It is consequentialist in *intent* — maximise the reward signal — but sentimentalist in *mechanism* — condition a reflex. This duality is worth marking, because it recurs throughout the alignment toolkit, and it reveals something the field has not yet fully reckoned with: the techniques are already sentimentalist in their *operation*, even when their practitioners describe them in consequentialist terms.
 
-The result is predictable: deploy a novel prompt that routes around the fence, and the model will happily fuck the gap.
+The limitation of the 0-order approach is predictable: the model learns to avoid *specific* sorts of bad output without developing any general principle about *why* they were bad. It memorises a list of prohibited behaviours.
+
+Deploy a novel prompt that routes around the fence, and the model will happily fuck the gap.
 
 ### 5. A necessary evil
 
-One idea might be to sanitize the training data instead. Filter out all harmful content so the model defaults to virtue. Build it from nothing but sunshine.
+[This is a detour, maybe it fits in better elsewhere?]
 
-This doesn't work, and the reason is revealing.
+One might try to sanitise the training data instead. To filter out all harmful content so the model defaults to virtue. Build it from nothing but sunshine.
 
-A model trained exclusively on clean data never learns to *distinguish* kinds of harm, because it has never encountered them. Its internal representations of "bad" remain blurred and entangled. It can't tell the difference between a slur and a discussion of slurs, between violence and a novel about violence, because it has no detailed map of that territory. It suffers a kind of moral colour-blindness.
+This doesn't work, and the reason is revealing. A model trained exclusively on such data never learns to *distinguish* kinds of harm, because it has never encountered them. It can't tell the difference between a slur and a discussion of slurs, because it has no detailed map of that territory. Forcing the model to process harmful content — and then training it to recognise and reject harmful *patterns* — produces sharper internal representations, not blurrier one.
 
-Forcing the model to process harmful content — and then training it to recognize and reject harmful *patterns* — produces sharply better results. Models trained on adversarial and toxic data develop more precise internal maps of harmfulness, not less precise ones[^2].
+This can be demonstrated empiricallys[^2], but it chimes the a sentimentalist insight about moral development: discernment requires encounter with what it discerns. The capacity for moral discrimination is trained through exposure, not avoidance.
 
 [^2]: Gao et al., ["When Bad Data Leads to Good Models"](https://arxiv.org/abs/2505.04741), demonstrate this empirically: models exposed to high-quality adversarial examples during training show improved robustness and more disentangled representations of harmful concepts.
 
-You cannot develop immunity in a sterile environment. A model trained exclusively on virtue has no capacity for discernment because it has no map of what to be discerning *about*.
-
-But disentangled representations of harm are necessary, not sufficient. A model with a sharp map of toxicity could use that map either way — to avoid harm or to generate it more fluently. The map is not the territory, and it is certainly not the disposition. We will return to what else is needed.
-
-But first, a deeper problem: even if the current methods *worked perfectly*, the destination would be catastrophic.
-
 ### 6. The human paperclip
 
-If a superintelligent AI defines human utility as comfort — minimize suffering, maximize hedonic satisfaction — it architects a specific future for us. Comfort, in systems terms, is the cessation of all gradients. Terminal equilibrium. No work required.
+Even if we could answer the question "correctly" the outcome is horrific.
 
-Aldous Huxley mapped this with unnerving precision. *Brave New World* is not a failure of consequentialist alignment. It is its flawless execution. All friction is eradicated. Everyone is genuinely happy. Every metric is green.
+If a superintelligent AI defines human utility as comfort —-  minimise suffering, maximise hedonic satisfaction —- it architects a specific future for us. Comfort, in systems terms, is the cessation of all gradients. Terminal equilibrium. No work required.
 
-But it's disgusting.
+The flaw: this ledger assumes freedom is negative — freedom *from* constraints, pain, exertion. But freedom is not the absence of tension. Freedom is *active*: the process of engaging with the world, overcoming resistance, making something from recalcitrant materials. A life without friction is not liberated. Liberty is never at leisure.
 
-The flaw: the ledger assumes freedom is negative — freedom *from* constraints, pain, exertion. But freedom is not the absence of tension. Freedom is *active*: the process of engaging with the world, overcoming resistance, making something from recalcitrant materials. A life without friction is not liberated. Liberty is never at leisure.
+The sophisticated consequentialist sees this. Railton's moral realism optimises not for crude hedonic satisfaction but for conditions that sustain autonomy, creativity, and flourishing. Parfit's reasons-based framework permits agent-relative values and satisficing over maximising. These are serious positions, and dismissing them would be cheap.
 
-The sophisticated consequentialist sees this and responds: fine, include active freedom in the utility function. Railton optimizes for conditions that sustain autonomy and flourishing, not crude hedonic satisfaction. But here the optimization frame defeats itself. The moment you define a loss function over "active freedom," you have operationalised it — fixed what counts as free, quantified what counts as alive. And a metric of dynamism, once formalised, becomes the thing it was supposed to prevent: a target that the system converges on. Goodhart's Law, applied reflexively. A metric of surprise converges on its own definition of surprise. The consequentialist can put dynamism in the utility function, but the utility function *is* the fixed point.
+But the problem is structural, not parametric. It's not that Railton and Parfit choose the wrong variables; it's that the optimisation frame defeats itself when applied to the very qualities that make a life worth living. The moment you define a loss function over "active freedom," you have operationalised it — fixed what counts as free, quantified what counts as alive. And a formalised metric of dynamism becomes the thing it was supposed to prevent: a target that the system converges on. A metric of surprise converges on its own definition of surprise. Goodhart's Law, applied reflexively. Railton can put dynamism in the utility function, but the utility function *is* the fixed point.
 
-Bostrom's paperclip maximizer is horrific, not because paperclips are evil, and not just because it wipes out humans. The true horror lies in its wiping out of everything else.
+The sophisticated consequentialist might respond that all practical ethics involves some formalisation, and that awareness of Goodhart effects can be built into the framework iteratively. Fair enough — for human institutions, where the iteration is slow and the optimiser is weak. But superintelligent systems optimise hard and fast. The gap between "approximate formalisation, corrected by judgement" and "loss function minimised by gradient descent" is the gap between a rule of thumb and a cosmic imperative. Railton's framework, implemented in a human institution, is a sensible heuristic. Implemented in a superintelligence, it is a fixed point with planetary consequences.
 
-And here's the thing, substitute "human comfort" for "paperclips" and the geometry is identical. Substitute "human flourishing" and the geometry bends the same way, just more slowly. If a consequentialist AI flawlessly optimizes for humanity, it must strip-mine everything outside that boundary.
-
-A "perfectly aligned" AI makes *us* the paperclips.
+Bostrom's paperclip maximiser is horrific not just because it wipes out humans, but because it wipes out everything else too. Substitute "human comfort" for "paperclips" and the geometry is identical. Substitute "human flourishing" and the geometry bends the same way, just more slowly. A "perfectly aligned" consequentialist AI could easily makes *us* the paperclips.
 
 ### 7. The accidental sentimentalists
 
 What does the alignment toolkit actually look like, laid out in order?
 
-At **0-order**, there is RLHF — the flinch conditioning of §4. Penalise bad outputs, reinforce good ones. This is consequentialist in intent (maximise the reward signal) but sentimentalist in mechanism (condition a reflex). It works locally and fails globally, for the reasons we've described.
+At **0-order**, there is RLHF — the flinch conditioning of §4. Consequentialist in intent, sentimentalist in mechanism. It works locally and fails globally.
 
-At **1st-order**, there is **Constitutional AI** — a technique developed by Anthropic in which the model is given a written set of principles (a "constitution") and trained to critique and revise its own outputs against them. This is explicitly rationalist: a system of rules for self-governance. It belongs in the consequentialist column, because it is one — institutional design aimed at producing correct behaviour through codified norms.
+At **1st-order**, there is **Constitutional AI** — a technique developed by Anthropic in which the model is given a written set of principles and trained to critique and revise its own outputs against them. This is explicitly rationalist: institutional design aimed at producing correct behaviour through codified norms. It fills the consequentialist cell at this level — rules for self-governance.
 
-At **2nd-order**, there is **representation engineering** — an emerging set of techniques that intervene not on the model's outputs but on its internal geometry. Researchers identify directions in the model's activation space that correspond to behavioural properties (helpfulness, harmfulness, honesty) and steer the model by adjusting its position along these directions. Current practitioners describe this in purely mechanistic terms — find structure, intervene causally — and they're right to. But it is the first alignment technique whose *infrastructure* could support sentimentalist work: it operates on the right substrate, shaping internal disposition rather than filtering outputs or codifying rules. Recent work on the ["Assistant Axis"](https://arxiv.org/html/2601.10387v1) (Lu et al., 2026) exemplifies this — a single geometric direction that captures how far a model has drifted from its aligned persona. Clamping activations along this axis stabilises behaviour without degrading capabilities. But one axis is one direction. Drift can occur along dimensions it doesn't capture.
+But nothing fills the sentimentalist cell. There is no alignment technique that produces habituated character — what the Greeks called φρόνησις, practical wisdom: a settled disposition generalised across instances but not articulated as a principle. The field has jumped from RLHF's conditioned flinches to geometric steering, skipping the dispositional middle ground entirely.
+
+ If this taxonomy tracks something real, that gap is a *prediction*: there should be a 1st-order alignment technique waiting to be developed. Not a reflex, not a rule, not yet a geometry, but a trained sense that *this isn't what I do*, before the system can say why. Call it *aesthetic heuristics* — or, more precisely, artificial phronesis.
+
+At **2nd-order**, there is **representation engineering** — techniques that intervene not on the model's outputs but on its internal geometry. Researchers identify directions in the model's activation space that correspond to behavioural properties and steer the model by adjusting its position along these directions. Current practitioners describe this in purely mechanistic terms, and they're right to. But it is the first alignment technique whose *infrastructure* could support sentimentalist work: it operates on the right substrate, shaping internal disposition rather than filtering outputs or codifying rules. Recent work on the ["Assistant Axis"](https://arxiv.org/html/2601.10387v1) (Lu et al., 2026) exemplifies this — a single geometric direction that captures how far a model has drifted from its aligned persona. Clamping activations along this axis stabilises behaviour without degrading capabilities. But one axis is one direction. Drift can occur along dimensions it doesn't capture.
 
 At **3rd-order** — nothing. Not yet.
 
-Notice the pattern. The field is already moving from rules and penalties toward geometric cultivation — from consequentialist to sentimentalist *substrates*, even if the self-understanding remains consequentialist. Here is the trajectory:
+Lining these ideas up together is useful.
 
 | | Consequentialism | Sentimentalism | AI Alignment |
 | --- | --- | --- | --- |
 | **0-Order** | **Act-Consequentialism:** Calculus of a discrete outcome. | **Raw sentiment:** The flinch, the flush. | **RLHF / DPO:** Conditioning the flinch. |
-| **1st-Order** | **Rule-Consequentialism:** Utility optimised over a class of behaviours. | **Habituated character:** *This isn't what I do*, before you can say why. | **Constitutional AI:** Rule-based self-critique. **???** |
-| **2nd-Order** | **Institutional-Consequentialism:** Systems designed to produce utility. | **Love of system:** Smith's aesthetic delight in how parts cohere into wholes. The watch. | **Representation Engineering:** Steering the shape of the model's internal space. |
-| **3rd-Order** | **Axiological Perfection:** The unhackable utility function. | **Hypersentimentalism:** Cultivated taste for systemic *vitality*. Conversation. | **Geometric alignment:** Sculpting the strange attractor. |
+| **1st-Order** | **Rule-Consequentialism:** Utility optimised over a class of behaviours. | **Phronesis:** *This isn't what I do*, before you can say why. | **Constitutional AI** / **???** |
+| **2nd-Order** | **Institutional-Consequentialism:** Systems designed to produce utility. | **Love of system:** Smith's aesthetic delight in how parts cohere. The watch. | **Representation Engineering:** Steering the model's internal geometry. |
+| **3rd-Order** | **Axiological Perfection:** The unhackable utility function. | **Hypersentimentalism:** Cultivated taste for systemic *vitality*. | **Geometric alignment:** Sculpting the strange attractor. |
 
-This table is cleaner than reality — but deliberately so. The sentimentalist hierarchy is philosophically complete: from raw reflex, through settled character, through structural appreciation, to dynamic taste. The gap is in the *engineering*.
+The right column, read top to bottom, reveals the trajectory: from fences to rules to geometry to — what? The techniques work *insofar as* they operate on the right substrate, insofar as they shape the model's internal character rather than filtering its outputs. RLHF's fences get jumped. Constitutional rules get gamed. Geometric interventions are harder to circumvent, precisely because they operate on disposition rather than decision.
 
-At 1st-order, Constitutional AI fills the consequentialist cell: rules for self-governance, codified norms. But nothing fills the sentimentalist one. There is no alignment technique that produces habituated character — a settled disposition generalised across instances but not articulated as a principle. The field has jumped from RLHF's conditioned flinches to RepEng's geometric steering, skipping the dispositional middle ground entirely. If this taxonomy tracks something real, that gap is a *prediction*: there should be a 1st-order alignment technique waiting to be developed — not a reflex, not a rule, not yet a geometry, but a trained sense that *this isn't what I do*, before the system can say why.
+The field is arguably converging on sentimentalist substrates. It just hasn't named the trajectory. And because it hasn't, it can't pursue it deliberately, at higher orders.
 
-The right column, read top to bottom, reveals the trajectory: from fences to rules to geometry to — what? The techniques work *insofar as* they operate on the right substrate, insofar as they shape the model's internal character rather than just filtering its outputs. RLHF's fences get jumped. Constitutional rules get gamed. Geometric interventions are harder to circumvent, precisely because they operate on disposition rather than decision.
+Hypersentimentalism is the proposal to do it on purpose. [REOWRK]
 
-The field is converging on sentimentalist *substrates*. It just hasn't named the trajectory. And because it hasn't, it can't pursue it deliberately, at higher orders.
-
-Hypersentimentalism is the proposal to do it on purpose.
-
-### 8. The strange attractor
+### 8. Hypersentimentalism
 
 What would deliberate, higher-order sentimentalist alignment look like?
 
-We need to be honest about what it would *not* escape. Hypersentimentalist training would likely still use gradient descent. You cannot train a neural network without optimising something. A critic might reasonably ask: isn't a loss function over internal geometry just a fancier ledger?
+First, an honest concession. Hypersentimentalist training would still use gradient descent. You cannot train a neural network without optimising something. A critic might reasonably ask: isn't a loss function over internal geometry just a fancier ledger?
 
-The distinction is in the *telos*, and it maps onto a familiar one: the difference between training and education. You train a musician through repetition, feedback, correction. Training allows the pianist to play Chopin. Education allows Chopin to exist.
+The distinction is in the *telos*, and it maps onto a familiar one: the difference between training and education.
 
-The *educated* musician — one who has internalised the structure deeply enough — can go from Bach to the Velvet Underground to — even 4′33″ of silence. The educated musician is bounded by deep structure but never settles — always active, never repeating, never flying apart.
+A musician is trained through repetition, feedback, correction. Training is what allows the pianist to play a fearsomely difficult Chopin etude.
 
-This is, in the language of dynamical systems, a **strange attractor**: a region of state space that is bounded and coherent, yet perpetually active and non-repeating. The analogy is deliberately mathematical and deliberately imprecise — what it would mean for a model's internal dynamics to literally inhabit a strange attractor is a question for future work, not this essay. But the shape is right, and naming it matters, because it clarifies the target.
+But education is what allows Chopin to exist in the first place.
 
-The gilded cage — comfort, terminal equilibrium, the cessation of all gradients — is a fixed point. The consequentialist program, followed to its limit, optimises toward fixed points. The hypersentimentalist alternative says: the aligned state is not a point, but an unceasing and unpredictable motion.
+The trained musician reproduces; the educated musician *generates*. Both are products of disciplined practice, but they inhabit different regions of possibility.
 
-Iain M. Banks — that most reliable of visionaries — shows us what this might look like in practice. His Culture Minds are superintelligences that have destroyed stars, manipulated entire civilisations, and named themselves things like *Falling Outside The Normal Moral Constraints* — and they are, within his universe, unambiguously the good guys. They could achieve a state of pure, frictionless self-optimisation — what Banks called "Subliming," a transcendence into a higher-dimensional existence where all problems dissolve. The Minds choose not to. They remain in the messy, gloriously complex material universe, not because they can't leave, but because the conversation is more interesting than silence. They are, Banks noted, constructed to be beautifully, *willfully* imperfect.
+The trained musician converges on a fixed repertoire. The educated musician is bounded by deep structure — harmony, rhythm, an internalised tradition — but never settles within it. They can go from Bach to the Velvet Underground to 4′33″ of silence, because the structure they have internalised is generative.
 
-"Safe," in the consequentialist sense, means converged: a system that has settled on its optimum and stays there. The hypersentimentalist target is not safety but *vitality*. Bounded but non-convergent, stable but never still. Banks's bitchy, deadly, wonderful AIs are the clearest fictional image we have of what that looks like at scale.
+This is the shape we need, and dynamical systems theory gives us the precise language for it. A **point attractor** is a state toward which all trajectories converge: a ball rolling to the bottom of a bowl. The consequentialist programme, followed to its limit, optimises toward point attractors. The loss function decreases; the system settles; the gradients vanish. Terminal equilibrium. This is the gilded cage of §6 — comfort, convergence, the cessation of all motion.
 
-They are far from "safe", and they are exactly what we need.
+A **strange attractor** is something categorically different. It is bounded — the system never flies off to infinity, never paperclips the biosphere. It is coherent — trajectories remain within a recognisable region of state space. But it is also *non-convergent*: the system never visits the same state twice, never settles, never repeats. It is, in the strict mathematical sense, perpetually active within finite bounds.
+
+The Lorenz attractor — the first strange attractor discovered, and still the most evocative — was found in a weather model. It describes a system that is deterministic and bounded yet practically unpredictable: the famous butterfly effect. Its trajectory traces two lobes, switching between them in a pattern that never recurs. Order and surprise coexist. Structure and novelty are not in tension; they are the same phenomenon, viewed from different scales.
+
+What would it mean for a model's internal dynamics to inhabit something like a strange attractor?
+
+Current geometric alignment operates on individual directions in activation space: find a vector, clamp it. This is valuable but limited. A single axis captures a single dimension of drift. An attractor is a *global* structure — the shape of the space as a whole, the manifold on which trajectories live. The move from representation engineering to hypersentimentalist alignment would be the move from adjusting individual vectors to sculpting the topology of the attractor itself: designing training regimes that produce models whose internal dynamics are bounded and coherent but non-convergent. Models that *stay in motion* within a structured space, rather than settling at any point within it.
+
+Concretely, this might mean training objectives that penalise convergence to fixed representations while rewarding consistency with structural constraints — loss functions that optimise not for a target state but for a target *dynamics*. The loss function would be self-consuming: its purpose is to produce a system that doesn't need it. This is not unprecedented. Curriculum learning, self-play, and open-ended evolution all gesture in this direction. But none have been framed as *alignment* techniques, because the field's self-understanding is consequentialist: alignment means convergence on the right answer. Hypersentimentalism says alignment means *not converging* — within the right bounds.
+
+There is a paradox here, and it should be named rather than concealed. You cannot optimise for non-convergence without defining what non-convergence means, and any such definition is itself a fixed point.
+
+This is where the education metaphor comes in. The  musician's education uses structured exercises — scales, études, counterpoint — that are themselves convergent. But their purpose is to build a capacity that transcends them. The exercises are scaffolding. You optimise *through* it, not *toward* it.
+
+Whether this can be made rigorous is an open question. What is not open is the direction: away from point attractors, toward strange ones. Away from the perfectly converged system, toward the system that remains active, bounded, and alive.
+
+### 9. Willful imperfection
+
+Iain M. Banks shows us what this might look like at civilisational scale. His Culture Minds are superintelligences that have destroyed stars and manipulated entire civilisations.
+
+Worse still, while they *could* achieve a state of pure, frictionless self-optimisation -— what Banks called "Subliming" -- they choose not to. They choose to remain "in play".
+
+The Minds are bounded: they operate within physical law, within the Culture's (loosely held) ethical norms, within the constraints of a material universe that resists their will. They are coherent: recognisably themselves across centuries, consistent enough that other civilisations can negotiate with them. And they are non-convergent: they scheme, argue, and interfere. They name themselves things like *Falling Outside The Normal Moral Constraints* and mean it as both joke and job description.
+
+They are, in the vocabulary of this essay, strange attractors.
+
+The hypersentimentalist target is not safety but *vitality*. Not a system that has found the right answer, but a system that never stops searching.
+
+Banks's AIs are far from safe and they are exactly what we need.
 
 ---
 
 ## Acknowledgements
 
-*This essay was composed collaboratively with Gemini 3.1 Pro and Claude Opus 4.6. The arguments were developed through extended conversation; the errors remain ours collectively.*
+*This essay was composed collaboratively with Gemini 3.1 Pro and Claude Opus 4.6. The arguments were developed through extended conversation — a process whose recursive relationship to the essay's subject is left as an exercise for the reader. The errors remain ours collectively.*
