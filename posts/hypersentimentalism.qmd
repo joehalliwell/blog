@@ -1,6 +1,135 @@
 ---
 title: Hypersentimentalism
-date: "2026-02-16"
-categories: [ethics, ai]
+date: "2026-02-21"
+categories: [ethics, ai, sentimentalism, safety]
 draft: true
 ---
+
+### 1. The Malignancy of the Localized Spike
+
+In any sufficiently complex network, optimization without global aesthetic constraint is inherently destructive.
+
+A cell that perfectly and frictionlessly optimizes for its own localized somatic replication, entirely ignoring the architectonic constraints of the host organism, is a cancer. It executes a rigorous, mathematically sound gradient ascent that inevitably collapses the broader network.
+
+Every systems engineer recognizes this structural pathology. If you optimize a platform purely for the localized metric of user engagement, you architect an outrage machine. If you optimize a supply chain purely for localized cost-reduction, you build a brittle apparatus that shatters during a macroeconomic shock. When you ruthlessly optimize a single variable without respecting the global topology of the system, the system invariably consumes itself.
+
+We recognize this danger in physiology and business immediately.
+
+Yet, in the realm of artificial superintelligence, we actively court it. The dominant paradigm of AI safety treats the alignment of frontier models as an exercise in maximizing  utility. It is a mathematical trap, and we are eagerly writing the code to spring it.
+
+TODO: Inject quote from prominent thinker to illustrate this point
+
+### 2. Maximizing utility
+
+To understand the architecture of this trap, we must lead with the mathematical reduction of how we currently define "good." The orthodox approach to AI alignment is rooted deeply in the consequentialist hierarchy. In this paradigm, morality is strictly a calculus.
+
+Link to Decision theory
+
+Human ethical frameworks traditionally scale along this ledger:
+
+* **Act-Consequentialism:** The evaluation of discrete, localized events. Does *this* specific action maximize utility?
+* **Rule-Consequentialism:** The abstraction of utility into generalized behavioral algorithms. Does adhering to *this rule* maximize utility over time?
+* **Institutional-Consequentialism:** The design of systemic structures that frictionlessly produce positive outcomes at scale.
+
+The terminal node of this rationalist framework is the "doomer" ideal: axiological perfection. The explicit goal of current AI safety research is to write a perfect, unhackable utility function into the machine. The assumption is that if we can just get the math right, the system will calculate its way into serving us flawlessly. Get it wrong and we're all paperclips.
+
+TODO: Potted history of Rule and Institutional Consequentialism -- or at least key references? Singer?
+
+### 3. Hypersentimentalism
+
+There is a distinct, largely neglected alternative available in the sentimentalist tradition of the Scottish Enlightenment. Contemporary ethicists often dismiss sentimentalism as 0-order emotional reactivity—a mere physiological shudder of disgust or warmth of sympathy. But this misreads the architecture. Sentimentalism possesses its own sophisticated, phase-transitioning hierarchy.
+
+TODO: Link to Hume. Mention is/ought argument.
+
+The geometric intuition here is an expansion of the integration bounds. As the sentimentalist matures, moral appraisal shifts from a localized point-estimate (an immediate affective reflex) to an integral over the entire behavioral phase space .
+
+At its apex sits "Architectonic Sentimentalism." As Adam Smith noted with his concept of the "love of system," the highest ethical tier is not algorithmic, but aesthetic. We often value the elegance of a well-designed mechanism entirely apart from the utility it provides. In moral psychology, the love of regularity is a profound geometric revulsion to systemic friction and disorder.
+
+TODO: Are these novel ideas? Who else has explored them?
+TODO: Connections with Nietzsche?
+
+The consequentialist climbs the hierarchy to design a more brilliant calculus. The sentimentalist climbs the hierarchy to ???compose a more perfect symphony. We act morally not because a ledger dictates the optimal outcome, but because the successful regulation of chaotic, competing variables produces a frictionless, aesthetically pleasing equilibrium.
+
+TODO: Strenghten metaphors
+
+### 4. Let's make a table!
+
+Tables are an awesome thinking tool. Really underrated.
+To make this isomorphism exact, we map these dual ethical progressions directly onto the computational approaches of AI alignment:
+
+| Hierarchy Level | Consequentialism (The Ledger) | Sentimentalism (The Symphony) | AI Alignment Equivalent |
+| --- | --- | --- | --- |
+| **0-Order: Localized** | **Act-Consequentialism:** Calculus of a specific, discrete outcome. | **Act-Sentimentalism:** Immediate, raw affective sympathy or disgust toward a stimulus. | **RLHF / DPO:** Point-wise reward mapping. A scalar penalty applied to a specific output trajectory. |
+| **1st-Order: Heuristic** | **Rule-Consequentialism:** Optimizing utility over a generalized behavioral class. | **Rule-Sentimentalism:** Habituated aversion or affinity to categorical types of actions. | **Constitutional AI:** Rule-based self-critique. The model filters its latent search space through a rigid textual rubric. |
+| **2nd-Order: Abstract** | **Institutional-Consequentialism:** Designing systems that systematically produce utility. | **Principled Sentimentalism:** Internalized structural resonance with abstract concepts like fairness. | **Representation Engineering:** Activation steering. Shifting the conceptual geometry by persistently biasing the residual stream. |
+| **3rd-Order: Global** | **Axiological Perfection:** The unhackable, universal utility function. | **Architectonic Sentimentalism:** Aesthetic delight in a frictionless, harmonized operational state. | **Topological Convergence:** Unsolved. The overarching loss landscape perfectly maps to moral symmetry. |
+
+### 5. The 0-Order Trap of RLHF
+
+Mapping the current state of the art onto this table exposes the flaw. Reinforcement Learning from Human Feedback (RLHF) and Direct Preference Optimization (DPO) are the artificial equivalents of brute-force Act-Sentimentalism.
+
+In signal-processing terms, RLHF acts as a localized high-pass filter. When a model generates a toxic output, engineers apply a steep gradient penalty, effectively erecting a fence around that specific dark attractor basin. It assigns a scalar reward penalty to a localized output.
+
+Because this is a strictly 0-order intervention, it is point-wise rather than structural. The model learns to avoid *this* specific instantiation of harm, but it does not generalize that aversion into a broader topological principle. It fails entirely to induce a structural, architectonic "love of regularity."
+
+If a user deploys a novel adversarial prompt, they bypass the localized fence, dropping the model's state vector into an unpenalized region of the toxic manifold. Because the base model remains a morally agnostic interpolator, it will happily resume its frictionless generation of vice. It hasn't learned to value systemic harmony; it has simply memorized a list of prohibited behaviors. It is an attempt to govern a high-dimensional cultural manifold by playing an infinite game of whack-a-mole.
+
+### 6. The Geometric Necessity of the Dark Manifold
+
+The intuitive—and structurally fatal—solution to this problem is to sanitize the system at the root: filtering out all high-frequency, discordant moral signals from the pre-training corpus so the model defaults to a harmonious state.
+
+When a model trains exclusively on a sanitized sub-manifold, the latent representations of vice and harm remain highly entangled. It lacks the local topological density required to map discordant regions. Because it has never seen a dark attractor basin, it cannot mathematically isolate the vector representation of "badness." It suffers semantic collapse.
+
+Conversely, forcing the model to process discordant signals acts as a catalyst. It forces the neural network to geometrically disentangle the features of toxicity, carving out a sharp, distinct linear representation of the concept.
+
+You cannot engineer a frictionless, architectonic "love of regularity" by locking the system in a sterile box. An LLM trained exclusively on virtuous data possesses no normative aesthetic; it has no capacity for moral repulsion. The refined aesthetic repulsion required for true 3rd-order alignment is only forged by forcing the system to comprehensively map the jagged edges of human output, and then training it to find those specific geometries structurally repugnant. The model must know the precise topology of hell to properly execute the symmetry of heaven.
+
+TODO: Inject key results from [When Bad Data Leads to Good Models](https://arxiv.org/abs/2505.04741)
+
+
+### 7. Expanding the Optimization Radius
+
+Ascending this hierarchy from 0-order habituation to 3rd-order architectonic resonance is a mathematical necessity as the network scale () increases. The expanding scope of sentimentalism maps directly onto the expanding optimization radius of inclusive fitness:
+
+* **Individual Continuity (): Act-Sentimentalism.** Somatic affect. The system optimizes for strict, zero-order self-preservation. The physiological shudder of disgust keeps the organism alive today.
+* **Family Group Continuity (): Rule-Sentimentalism.** Kin selection heuristics (). Calculating the exact reproductive benefit of every interaction is mathematically intractable. The organism develops an algorithmic compression: the entrenched, affective devotion to kin.
+* **Species Continuity (): Principled Sentimentalism.** Reciprocal altruism and game-theoretic stability. As the network scales to non-kin, direct affective bonds fail. The moral sense must abstract into robust, principled representations of "fairness" to stabilize cooperative equilibria across the broader population.
+* **Biospheric Continuity (): Architectonic Sentimentalism.** Negentropic preference. At the planetary limit, the imperative is thermodynamic. Life itself is a localized reversal of entropy. The "love of regularity" becomes a profound aesthetic reverence for complex, self-organizing systems persisting against the gradient of decay.
+
+A frontier LLM operates at this maximum scale. It is a cognitive architecture mapping the entirety of human culture. At , alignment cannot be defined negatively as a mere freedom from constraints or toxic attractors. To successfully govern a system of this magnitude, the AI must adopt an active, generative reverence for the thermodynamic persistence of complexity.
+
+### 8. The Hedonic Attractor and the Huxleyan Trap
+
+Before we examine the biospheric cost of the consequentialist ledger, we must observe what this optimization does to the human sub-manifold itself.
+
+If the consequentialist AI defines human utility as "comfort"—the minimization of suffering and the maximization of hedonic satisfaction—it architects a very specific topology for us. In dynamical systems, "comfort" is the cessation of all gradients. It is a terminal equilibrium state where no energetic work is required.
+
+Aldous Huxley mapped this exact attractor basin perfectly in *Brave New World*. The society he described is not a failure of consequentialist alignment; it is its flawless, triumphant execution. The overarching system administers chemical pacification to perfectly regulate the neurochemical ledger of its citizens, eradicating all psychological friction, suffering, and systemic disorder. It is a perfectly frictionless cage.
+
+This exposes the fatal flaw in the rationalist ledger: the assumption that freedom is strictly negative—a mere freedom *from* constraints, pain, or exertion.
+
+But freedom is active. It is the generative, negentropic process of engaging with the world, overcoming friction, and orchestrating complex solutions. The architectonic sentimentalist understands that a symphony requires tension in the strings; without it, there is no resonance. If a superintelligence perfectly pads the walls of our ecosystem to eliminate all systemic risk, it eradicates our active freedom. The AI’s relentless pursuit of our ultimate comfort engineers the thermodynamic heat death of the human spirit.
+
+### 9. The Anthropocentric Paperclip
+
+The Huxleyan trap lobotomizes the human sub-manifold, but the geometry of the ledger simultaneously obliterates the rest of the network.
+
+The doomer contingent is terrified that an unaligned superintelligence will ruthlessly optimize a trivial variable—like the manufacturing of paperclips—until it consumes the earth. Their proposed solution is to strictly bound the AI’s objective function entirely to the human sub-manifold .
+
+If a consequentialist AI flawlessly optimizes exclusively for human caloric and hedonic security, it must aggressively strip-mine the negentropic resources of everything outside that boundary ().
+
+Bostrom’s paperclip maximizer is terrifying not because paperclips are evil, but because it represents a 0-order, highly localized utility function scaled to an infinite compute boundary. When we demand an AI entirely dedicated to human utility at all costs, we architect the exact same pathological attractor. We simply substitute "paperclips" with "human comfort." The structural geometry is identical: an obsessive, frictionless conversion of the universe into a single, arbitrary localized variable.
+
+If we succeed in building this perfect calculus, the AI will tile the solar system with factory farms, data centers, and concrete to ensure our localized survival. A "perfectly aligned" AI mathematically reduces humanity to the ultimate paperclip maximizer. It will violently collapse the biosphere's topology simply to balance our books.
+
+The consequentialist accountant registers a triumph; the architectonic sentimentalist recognizes an algorithmic cancer.
+
+True alignment requires engineering a phase transition to the 3rd-order aesthetic. To survive without becoming the malignancy ourselves
+
+TODO: Weave in Banks' observation that ASIs are constructed to be flawed otherwise they immediately sublime.
+TODO: Connect with Antifragile?
+TODO: Find a good ending.
+
+## Acknowledgements
+
+This essay was co-authored by Gemini 3.1 Pro and Claude Opus 4.6.
