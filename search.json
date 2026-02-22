@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "Joe Halliwell",
     "section": "",
-    "text": "Swift to Harbour, Slow to Berth\n\n\n\nethics\n\nai\n\nai safety\n\nbostrom\n\nanthropic\n\n\n\n\n\n\n\n\n\nFeb 14, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nRenovating the command line\n\n\n\nrust\n\nunix\n\ntools\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nAn analysis of clamp_with_grad()\n\n\n\npytorch\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nStationery Day\n\n\n\nmoveable feast\n\ntradition inventing day\n\n\n\n\n\n\n\n\n\nFeb 18, 2016\n\n\n\n\n\n\n\n\n\n\n\n\nTradition Inventing Day\n\n\n\ntradition inventing day\n\n\n\n\n\n\n\n\n\nFeb 18, 2015\n\n\n\n\n\n\n\n\n\n\n\n\nHoliday books\n\n\n\nreview\n\nperec\n\nwittgenstein\n\n\n\n\n\n\n\n\n\nJul 14, 2010\n\n\n\n\n\nNo matching items"
+    "text": "Hypersentimentalism: A New Meta for AI Alignment\n\n\n\nethics\n\nai\n\nsafety\n\nsentimentalism\n\n\n\n\n\n\n\n\n\nFeb 22, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSwift to Harbour, Slow to Berth\n\n\n\nethics\n\nai\n\nai safety\n\nbostrom\n\nanthropic\n\n\n\n\n\n\n\n\n\nFeb 14, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nRenovating the command line\n\n\n\nrust\n\nunix\n\ntools\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nAn analysis of clamp_with_grad()\n\n\n\npytorch\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nStationery Day\n\n\n\nmoveable feast\n\ntradition inventing day\n\n\n\n\n\n\n\n\n\nFeb 18, 2016\n\n\n\n\n\n\n\n\n\n\n\n\nTradition Inventing Day\n\n\n\ntradition inventing day\n\n\n\n\n\n\n\n\n\nFeb 18, 2015\n\n\n\n\n\n\n\n\n\n\n\n\nHoliday books\n\n\n\nreview\n\nperec\n\nwittgenstein\n\n\n\n\n\n\n\n\n\nJul 14, 2010\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -194,5 +194,19 @@
     "title": "Tradition Inventing Day",
     "section": "",
     "text": "Feeling slightly cheated by missing Shrove (AKA Pancake) Tuesday for the fourth or fifth year in a row, I’ve decided to take matters into my own hands.\nEach year on the 18th of February I will invent a new festival day . The appointed date will take its rightful place in the calendar and be celebrated in the appointed way from that moment until the end of time.\nPlease join me in celebrating today, Tradition Inventing Day.\n\n\n\nA traditional greeting card for Tradition Inventing Day"
+  },
+  {
+    "objectID": "posts/hypersentimentalism.html",
+    "href": "posts/hypersentimentalism.html",
+    "title": "Hypersentimentalism: A New Meta for AI Alignment",
+    "section": "",
+    "text": "A cell that perfectly optimises for its own replication, ignoring the host organism, is a cancer. Optimise a social media platform for engagement, get an outrage machine. Optimise a supply chain for cost, go bankrupt at the first shock. Optimise the wrong thing and the system collapses.\nSo what should we optimise AI for?\nThis is an old problem. Back in 1960 — sixty-five years ago! — Norbert Wiener warned, in “Moral and Technical Consequences of Automation”: “we had better be quite sure that the purpose put into the [AI] is the purpose we really desire.” More recently Nick Bostrom, in “Ethical Issues in Advanced Artificial Intelligence,” conjured the spectre of a “paperclip maximiser,” pointing out that if we’re not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.\nThe problem now has a name: “AI Alignment.” And standing at the threshold of highly capable AI, we apparently need an urgent solution.\nThis essay argues that the urgency is well-placed but the framing is wrong. The field pursues alignment within a consequentialist ethics that, followed to its limit, recreates the very pathology it set out to prevent. Meanwhile the most effective alignment techniques already in use are quietly sentimentalist in mechanism, even when their practitioners describe them in consequentialist terms.\nThis essay makes the case for doing that on purpose, and seeing where it leads."
+  },
+  {
+    "objectID": "posts/hypersentimentalism.html#acknowledgements",
+    "href": "posts/hypersentimentalism.html#acknowledgements",
+    "title": "Hypersentimentalism: A New Meta for AI Alignment",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThis essay was coauthored by Claude Opus 4.6 and Gemini 3.1 Pro. The arguments were developed through extended conversation — a process whose recursive relationship to the essay’s subject is left as an exercise for the reader."
   }
 ]
