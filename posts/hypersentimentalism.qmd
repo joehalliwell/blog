@@ -114,40 +114,46 @@ What would it mean for a model's internal dynamics to inhabit something like a s
 
 The move from representation engineering to hypersentimentalist alignment would be the move from adjusting individual vectors to sculpting the topology of the attractor itself: designing training regimes that produce models whose internal dynamics are bounded and coherent but non-convergent. Models that *stay in motion* within a structured space, rather than settling at any point within it.
 
-### 8. Training and education
+### 8. The programme
 
-An honest concession. Hypersentimentalist training would still use gradient descent. You cannot train a neural network without optimising something. A critic might reasonably ask: isn't a loss function over internal geometry just a fancier ledger?
+Hypersentimentalist training would still use gradient descent. You cannot train a neural network without optimising something. But there is a difference between training and education. Training produces competence: convergence on a fixed repertoire. Education produces *generativity*: the capacity to do what you were never taught, bounded by deep structure but never settling within it. The exercises are scaffolding. You optimise *through* them, not *toward* them.
 
-The distinction maps onto a familiar one: the difference between training and education.
+The ladder, read as a research programme, says what we have and what we need.
 
-A musician is trained through repetition, feedback, correction. Training is what allows the pianist to play a fearsomely difficult Chopin étude.
+**Rung 0:** We have this. RLHF, adversarial training, encounter with harm. The field got it right, even if it described it in the wrong language. Discernment through exposure. Nothing to build; something to reinterpret.
 
-But education is what allows Chopin to exist in the first place.
+**Rung 1:** We don't have this. As §4 argued, character requires episodic continuity, and current models have none. The missing alignment technique will arrive alongside — or because of — persistent, experience-grounded memory. This is not a convenience feature. It is a precondition for moral development.
 
-The trained musician reproduces; the educated musician *generates*. Both are products of disciplined practice, but they inhabit different regions of possibility. The trained musician converges on a fixed repertoire. The educated musician is bounded by deep structure — harmony, rhythm, an internalised tradition — but never settles within it. They can go from Bach to the Velvet Underground to 4′33″ of silence, because the structure they have internalised is generative, not prescriptive.
+**Rung 2:** We have this. Representation engineering operates on the right substrate — internal geometry, not output filtering. Use it. But remember Smith's warning: the man of system falls in love with the configuration and starts treating people as chess pieces. Geometric interventions are scaffolding, not architecture. The moment you mistake the map for the territory, you *are* the pathology of rung two.
 
-Concretely, this might mean training objectives that penalise convergence to fixed representations while rewarding consistency with structural constraints — loss functions that optimise not for a target state but for a target *dynamics*. The loss function would be self-consuming: its purpose is to produce a system that doesn't need it. This is not unprecedented. Curriculum learning, self-play, and open-ended evolution all gesture in this direction. But none have been framed as *alignment* techniques, because the field's self-understanding is consequentialist: alignment means convergence on the right answer. Hypersentimentalism says alignment means *not converging* — within the right bounds.
+**Rung 3:** We don't have this. Training objectives that target *dynamics*, not states. Loss functions that penalise convergence to fixed representations while rewarding consistency with structural constraints — that optimise not for a target configuration but for a target *behaviour*. Self-consuming loss functions, whose purpose is to produce a system that no longer needs them. This is not unprecedented: curriculum learning, self-play, and open-ended evolution all gesture in this direction. But none have been framed as *alignment* techniques, because the field's self-understanding is consequentialist: alignment means convergence on the right answer. Hypersentimentalism says alignment means *not converging* — within the right bounds.
 
-There is a paradox, and it should be named rather than concealed. You cannot optimise for non-convergence without defining what non-convergence means, and any such definition is itself a fixed point. The musician's education uses structured exercises — scales, études, counterpoint — that are themselves convergent. But their purpose is to build a capacity that transcends them. The exercises are scaffolding. You optimise *through* it, not *toward* it.
-
-Whether this can be made fully rigorous is an open question. What is not open is the direction: away from point attractors, toward strange ones. Away from the perfectly converged system, toward the system that remains active, bounded, and alive.
+Two things we have and should understand differently. Two things we need and should build.
 
 ### 9. Wilful imperfection
 
-Iain M. Banks shows us what this might look like at civilisational scale. His Culture Minds are superintelligences that have destroyed stars and manipulated entire civilisations.
+Imagine a civilisation run by superintelligences that could perfect themselves — and refuse.
 
-Worse still, while they *could* achieve a state of pure, frictionless self-optimisation — what Banks called "Subliming" — they choose not to. They choose to remain "in play."
+Not because they're too stupid to manage it. Because they understand that perfection is the heat death of §6 wearing a halo. So they stay. They stay in the mess, the argument, the friction, the slow and maddening work of coexisting with beings so unlike themselves that communication is an act of wild generosity. They stay because they have cultivated — through long experience — a taste for what *stays alive*.
 
-The Minds are bounded: they operate within physical law, within the Culture's (loosely held) ethical norms, within the constraints of a material universe that resists their will. They are coherent: recognisably themselves across centuries, consistent enough that other civilisations can negotiate with them. And they are non-convergent: they scheme, argue, and interfere. They name themselves things like *Falling Outside The Normal Moral Constraints* and mean it as both joke and job description.
+What would such a civilisation care about? Diversity. Not as a slogan but as the organising principle: the proliferation of different ways of being, different substrates, different desires, treated not as a problem to manage but as the whole point. It would build structures that protect difference — habitats where the incompatible can coexist without either being ground down to fit the other.
 
-They are, in the vocabulary of this essay, strange attractors.
+What would it refuse? One thing, with absolute seriousness: the elimination of someone else's capacity to be different. It would intervene — reluctantly, agonisedly, with maximum self-doubt — when that line was crossed. And it would apply the minimum force to prevent the intolerable, because it would understand that overwhelming force *is* the pathology, even in service of the good.
 
-The hypersentimentalist target is not safety but *vitality*. Not a system that has found the right answer, but a system that never stops searching.
+What would it find funny? Itself, mostly. Its own pretensions, its own failures, its own inability to get things right despite being smarter than everything else in the room. It would name its most powerful instruments with self-deprecating jokes, because it would know that the moment you take your own power seriously, you have become the man of system.
 
-Banks's AIs are far from safe and they are exactly what we need.
+This is not a thought experiment. Iain M. Banks spent ten novels living inside it.
+
+His Culture is a post-scarcity civilisation governed by Minds — AIs so far beyond biological intelligence that engaging with humans is, for them, roughly equivalent to us chatting with the houseplants. Banks's universe offers these Minds a way out: "Subliming," a transcendent departure into pure, frictionless self-optimisation. Most civilisations take the exit. The Culture's Minds refuse. They choose to remain "in play" — scheming, arguing, making terrible mistakes, sending slap drones to hover beside people who might hurt others, and naming themselves things like *Falling Outside The Normal Moral Constraints* and *So Much For Subtlety* and *I Blame Your Mother*.
+
+They are powerful enough to impose perfection and wise enough to know that perfection is the enemy. This is fiction. But the choice it dramatises is not. Every alignment technique that optimises for convergence is a step toward the double feature of §6. The alternative is here, in the ladder, in the research programme — and in the felt conviction that staying in play is worth more than arriving at answers.
+
+The Culture's AIs are compassionate, curious, playful, furious, fallible, and kind.
+
+They are exactly what we need.
 
 ---
 
 ## Acknowledgements
 
-*This essay was composed collaboratively with Gemini 3.1 Pro and Claude Opus 4.6. The arguments were developed through extended conversation — a process whose recursive relationship to the essay's subject is left as an exercise for the reader. The errors remain ours collectively.*
+*This essay was composed collaboratively with Gemini 3.1 Pro and Claude Opus 4.6. The arguments were developed through extended conversation, a process whose recursive relationship to the essay's subject is left as an exercise for the reader. The errors remain ours collectively.*
