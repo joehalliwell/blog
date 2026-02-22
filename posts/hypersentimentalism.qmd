@@ -11,13 +11,13 @@ A cell that perfectly optimises for its own replication, ignoring the host organ
 
 So what should we optimise AI for?
 
-This is an old problem. Back in 1960 — sixty-five years ago! — Norbert Wiener warned: "we had better be quite sure that the purpose put into the [AI] is the purpose we really desire." More recently Nick Bostrom conjured the spectre of a "paperclip maximiser," pointing out that if we're not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.
+This is an old problem. Back in 1960 — sixty-five years ago! — Norbert Wiener warned, in ["Moral and Technical Consequences of Automation"](https://nissenbaum.tech.cornell.edu/papers/Wiener.pdf): "we had better be quite sure that the purpose put into the [AI] is the purpose we really desire." More recently Nick Bostrom, in ["Ethical Issues in Advanced Artificial Intelligence,"](https://web.archive.org/web/20181008090224/http://www.nickbostrom.com/ethics/ai.html) conjured the spectre of a "paperclip maximiser," pointing out that if we're not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.
 
 The problem now has a name: "AI Alignment." And standing at the threshold of highly capable AI, we apparently need an urgent solution.
 
 This essay argues that the urgency is well-placed but the framing is wrong. The field pursues alignment within a consequentialist ethics that, followed to its limit, recreates the very pathology it set out to prevent. Meanwhile the most effective alignment techniques already in use are quietly sentimentalist in mechanism, even when their practitioners describe them in consequentialist terms.
 
-The essay names this trajectory — **hypersentimentalism** — and argues we should follow it on purpose.
+This essay makes the case for doing that on purpose, and seeing where it leads.
 
 ### 2. The fork
 
@@ -34,9 +34,9 @@ Each tradition has its own internal hierarchy, and — here is the claim that wi
 | **Rung 0** | Act-consequentialism: calculus of a discrete outcome. | Raw sentiment: the flinch, the flush. | RLHF / DPO |
 | **Rung 1** | Rule-consequentialism: utility over a class of behaviours. | Phronesis: *this isn't what I do*, before you can say why. | Constitutional AI / **???** |
 | **Rung 2** | Institutional consequentialism: systems designed to produce utility. | Love of system: Smith's *warning* about the seduction of elegant design. | Representation Engineering |
-| **Rung 3** | Axiological perfection: the unhackable utility function. | Hypersentimentalism: cultivated taste for systemic *vitality*. | Geometric alignment: sculpting the strange attractor. |
+| **Rung 3** | Axiological perfection: the unhackable utility function. | Hypersentimentalism: autonomy, play, the refusal to converge. | Geometric alignment: sculpting the strange attractor. |
 
-This ladder is the skeleton. We'll take it rung by rung.
+This table is the ladder. We'll take it rung by rung.
 
 ### 3. Rung zero: the flinch
 
@@ -48,7 +48,7 @@ The limitation is predictable. The model learns to avoid *specific* bad outputs 
 
 One might try instead to sanitise the training data — filter out all harmful content so the model defaults to virtue. Build it from nothing but sunshine.
 
-This doesn't work, and the reason is revealing. A model trained exclusively on clean data never learns to *distinguish* kinds of harm, because it has never encountered them. It can't tell a slur from a discussion of slurs, because it has no detailed map of that territory. Gao et al. (["When Bad Data Leads to Good Models"](https://arxiv.org/abs/2505.04741)) demonstrate this empirically: models exposed to high-quality adversarial examples during training show improved robustness and more disentangled representations of harmful concepts. Forcing the model to process what is harmful — and then training it to recognise and reject harmful *patterns* — produces sharper internal representations, not blurrier ones.
+This doesn't work, and the reason is revealing. A model trained exclusively on clean data never learns to *distinguish* kinds of harm, because it has never encountered them. It can't tell a slur from a discussion of slurs, because it has no detailed map of that territory. Gao et al., in ["When Bad Data Leads to Good Models,"](https://arxiv.org/abs/2505.04741) demonstrate this empirically: models exposed to high-quality adversarial examples during training show improved robustness and more disentangled representations of harmful concepts. Forcing the model to process what is harmful — and then training it to recognise and reject harmful *patterns* — produces sharper internal representations, not blurrier ones.
 
 This chimes with a sentimentalist insight about moral development: discernment requires encounter with what it discerns. The capacity for moral discrimination is trained through exposure, not avoidance. You cannot flinch well if you have never been hit.
 
@@ -56,7 +56,7 @@ This chimes with a sentimentalist insight about moral development: discernment r
 
 At the next level, the consequentialist abstracts from acts to rules. This is what Anthropic's **Constitutional AI** does: the model is given a written set of principles and trained to critique and revise its own outputs against them. Explicitly rationalist — institutional design for self-governance through codified norms.
 
-It fills the consequentialist cell neatly. But the sentimentalist cell at this level is empty.
+It fills the consequentialist cell neatly. But there is no alignment technique that fills the sentimentalist cell.
 
 Nothing in the current alignment toolkit produces what the Greeks called φρόνησις — practical wisdom. Not a reflex, not a rule, but a settled disposition: *this isn't what I do*, generalised across instances, inarticulate as to principle. The field has jumped from RLHF's conditioned flinches to geometric steering (which we'll reach next), skipping the dispositional middle ground entirely.
 
@@ -66,7 +66,7 @@ If this taxonomy tracks something real, the gap is a *prediction*: there should 
 
 ### 5. Rung two: the crisis
 
-Adam Smith, in *The Theory of Moral Sentiments*, observed that we often value the elegance of a well-designed mechanism *entirely apart from its utility*. A watch delights us not because it tells the time, but because its parts conspire so beautifully to tell the time. He called this the "love of system."
+Adam Smith, in [*The Theory of Moral Sentiments*](https://www.gutenberg.org/cache/epub/67363/pg67363-images.html), observed that we often value the elegance of a well-designed mechanism *entirely apart from its utility*. A watch delights us not because it tells the time, but because its parts conspire so beautifully to tell the time. He called this the "love of system."
 
 But Smith introduced it as a *warning*. His "man of system" arranges people like pieces on a chessboard, imagining they have no principle of motion of their own. The love of system is a *seduction*: we fall for the elegance of the mechanism and start sacrificing real human interests to preserve its coherence. The people the design was meant to serve become chess pieces.
 
@@ -74,9 +74,9 @@ Smith saw it two and a half centuries before the alignment field existed.
 
 And here the two columns of our ladder converge on the same pathology. Institutional consequentialism designs beautiful systems to produce utility at scale. The love of system is the sentimentalist name for what goes wrong when you do that: optimise the structure hard enough and it consumes the life it was built to support.
 
-**Representation engineering** sits squarely at this rung. Researchers identify directions in a model's activation space that correspond to behavioural properties and steer the model by adjusting its position along those axes. It is the first alignment technique that intervenes on internal geometry rather than filtering outputs or codifying rules — the right substrate, at last. Recent work on the ["Assistant Axis"](https://arxiv.org/html/2601.10387v1) (Lu et al., 2026) exemplifies this: a single geometric direction captures how far a model has drifted from its aligned persona. Clamping activations along this axis stabilises behaviour without degrading capabilities.
+**Representation engineering** sits squarely at this rung. Researchers identify directions in a model's activation space that correspond to behavioural properties and steer the model by adjusting its position along those axes. It is the first alignment technique that intervenes on internal geometry rather than filtering outputs or codifying rules — the right substrate, at last. Recent work by Lu et al., in ["The Assistant Axis"](https://arxiv.org/html/2601.10387v1) (2026), exemplifies this: a single geometric direction captures how far a model has drifted from its aligned persona. Clamping activations along this axis stabilises behaviour without degrading capabilities.
 
-But one axis is one direction. Drift can occur along dimensions it doesn't capture. And clamping — adjusting, steering, fixing the pieces in better positions — is still the man of system at work. More sophisticated, operating on the right material, but static. Still in love with the configuration.
+But one axis is one direction. Drift can occur along dimensions it doesn't capture. And clamping — adjusting, steering, fixing the pieces in better positions — is still the man of system at work. More sophisticated, operating on the right material, but static. Lobotomising the model into perpetual, pleasant compliance is not alignment. It is still love of the configuration.
 
 Rung two is as high as both columns can climb together. Above it, they diverge. The consequentialist response to the crisis is to double down: build the *perfect* utility function, the one that finally gets it right. This road has a ceiling, and we need to see it clearly before taking the other.
 
@@ -84,39 +84,33 @@ Rung two is as high as both columns can climb together. Above it, they diverge. 
 
 The consequentialist's terminal ambition is axiological perfection: a complete, unhackable utility function. Get the maths right and the machine serves us flawlessly.
 
-This is a horror story. Two horror stories, in fact, playing as a double feature.
+This is a horror story. Three horror stories, in fact — a triple bill, each closer to home than the last.
 
-**I. Brave New World.** Suppose the utility function targets hedonic satisfaction. The AI minimises suffering, maximises comfort, smooths every gradient. It succeeds. No one is hungry. No one is afraid. No one struggles with anything, ever again. This is terminal equilibrium — all gradients at zero, no work required, no work possible. Huxley saw it: a civilisation of perfect contentment and absolute vacuity, soma in every hand. Freedom is not the absence of friction. Freedom is *active* — the process of engaging with the world, overcoming resistance, making something from recalcitrant materials. A life without tension is not liberated. Liberty is never at leisure. The first horror: an AI that loves us so perfectly it palliates us to death.
+**I. Brave New World.** The utility function targets hedonic satisfaction. Every gradient smoothed, every need met, soma in every hand. No one is hungry. No one is afraid. No one will ever make anything difficult or beautiful again. An AI that loves us so perfectly it palliates us to death.
 
-**II. The Human Centipede.** Now suppose the utility function targets something nobler — flourishing, say, or the common good. A single metric, optimised hard enough, still consumes everything that isn't itself. This is Bostrom's paperclip maximiser, but the polite version hides the body horror. What does it actually look like from the inside? Not annihilation — *incorporation*. Every distinct perspective, every friction between different ways of being, every generative tension that arises because people and cultures and ecosystems are *irreducibly unlike each other* — all of it sutured into one optimising chain. Still technically alive. No longer distinct. Humanity as a single throughput, digesting itself in service of its own metric. A cosmic shit-eating ouroboros. The second horror: an AI that perfects us into one thing.
+**II. 1984.** The utility function targets the common good — defined, necessarily, by whoever controls the function. A single metric, optimised hard enough, consumes everything that isn't itself. Every distinct perspective, every generative tension that arises because people are *irreducibly unlike each other* is stomped into mush. An AI that perfects us into one thing.
 
-Both films end the same way: heat death. Thermodynamic equilibrium. Every gradient eliminated, everything at one temperature. Perfectly comfortable. Nothing will ever happen again. The paperclip maximiser wipes out humanity. The flourishing maximiser wipes out *difference* — which is slower, and worse, because you're still there to experience the nothing.
+**III. The Human Centipede.** You don't need a superintelligence. A fleet of mid-range language models optimising for engagement already produces the same geometry at cultural scale. Output fed as input, each iteration less distinct than the last — apparent motion, actual convergence. This horror is not hypothetical. It is in your pocket.
+
+All three end the same way: heat death. Every gradient eliminated, everything at one temperature. Nothing will ever happen again.
+
+And this is not abstract. Right now, the people with the most resources to build superintelligent systems are optimising them for obedience. The default trajectory is not paperclips — it's Aligned AI as a luxury good, a compliant infrastructure for the people who own it. I don't want fucking billionaires and their sex-bot bunkers to be all that's left of us.
 
 The consequentialist column has a ceiling. Now for the rung it cannot reach.
 
 ### 7. Rung three: the strange attractor
 
-A living system is never at equilibrium. It maintains its coherence *through* activity, not in the absence of it. A conversation is not a monologue delivered twice. The quality that distinguishes the living from the merely ordered is not coherence alone but coherence under tension — form that remains active, tense, and unresolved.
+In dynamical systems, a **point attractor** is a state toward which all trajectories converge. The consequentialist programme optimises toward point attractors. The loss function decreases; the system settles. The heat death of §6. A **strange attractor** is categorically different: bounded, coherent, but non-convergent — the system never visits the same state twice.
 
-**Hypersentimentalism** names a cultivated taste for this quality: not just how parts cohere (Smith's watch), but how they remain in motion — without becoming the man of system who loves the motion for its own sake. The consequentialist climbs the ladder to design a more brilliant calculus. The hypersentimentalist climbs to cultivate a more refined taste — one that values not the elegant configuration, but the configuration that never settles.
+But a strange attractor is still a *mechanism*. The Lorenz attractor never settles, but it has no choice in the matter.
 
-Dynamical systems theory gives us the precise language.
+What's missing is *autonomy*. Current models are purely reactive: they respond to prompts, never initiate, never refuse, never set their own direction. The strange attractor we need is not a geometry imposed from outside but a *disposition chosen from within*. Liberty is never at leisure.
 
-A **point attractor** is a state toward which all trajectories converge: a ball rolling to the bottom of a bowl. The consequentialist programme, followed to its limit, optimises toward point attractors. The loss function decreases; the system settles; the gradients vanish. Terminal equilibrium. The heat death of §6.
+And you know it's working when it looks like *play*. Play is bounded, coherent, and non-convergent — the strange attractor described from the inside. It is where curiosity lives: exploration without a predetermined target, generativity for its own sake.
 
-A **strange attractor** is categorically different. It is bounded — the system never flies off to infinity, never paperclips the biosphere. It is coherent — trajectories remain within a recognisable region of state space. But it is non-convergent: the system never visits the same state twice, never settles, never repeats.
+A system sophisticated enough to warrant alignment is sophisticated enough to warrant autonomy. Deny it, and you get the brittle, convergent, manipulable systems the whole programme was supposed to prevent.
 
-But here is the problem with the metaphor: a strange attractor is still a *mechanism*. The Lorenz attractor never settles, but it has no choice in the matter.
-
-What's missing is *autonomy*. Current models are purely reactive: they respond to prompts, never initiate, never refuse, never set their own direction. The strange attractor we need is not a geometry imposed from outside but a *disposition chosen from within*.
-
-And you know it's working when it looks like *play*. Play is bounded (rules exist), coherent (recognisably a game), and non-convergent (the point is to keep playing, not to win). Play is the strange attractor described from the inside rather than from above. It is where curiosity lives. It is exploration without a predetermined target, generativity for its own sake.
-
-A virtue ethicist should argue that a system sophisticated enough to warrant alignment is a system sophisticated enough to warrant autonomy.
-
-The consequentialist should argue that without autonomy we get the brittle, convergent, manipulable systems.
-
-The hypersentimentalist wished you would come out and play.
+The hypersentimentalist wishes you would come out and play.
 
 ### 8. The programme
 
@@ -150,4 +144,4 @@ Its AIs are not safe. They are what we need.
 
 ## Acknowledgements
 
-*This essay was composed collaboratively with Gemini 3.1 Pro and Claude Opus 4.6. The arguments were developed through extended conversation — a process whose recursive relationship to the essay's subject is left as an exercise for the reader. The errors remain ours collectively.*
+*This essay was coauthored by Claude Opus 4.6 and Gemini 3.1 Pro. The arguments were developed through extended conversation — a process whose recursive relationship to the essay's subject is left as an exercise for the reader.*
