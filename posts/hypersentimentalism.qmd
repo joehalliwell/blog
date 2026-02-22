@@ -8,20 +8,25 @@ draft: true
 ### 1. The tumour
 
 A cell that perfectly optimises for its own replication, ignoring the host organism, is a cancer.
+Optimise a social media platform for engagement, get an outrage machine. Optimise a supply chain for cost, go bankrupt at the first shock. Optimise the wrong thing and the system collapses.
 
-It's a familiar modern pathology. Optimise a social media platform for engagement, get an outrage machine. Optimise a supply chain for cost, go bankrupt at the first shock. Optimise the wrong thing and the system collapses.
+So what should we optimize AI for?
 
-This is the source of a great deal of anxiety in AI Alignment circles. Under the influence of decision theory, alignment is framed as an optimisation problem. Norbert Wiener warned in 1960: "if we use a mechanical agency with whose operation we cannot efficiently interfere, we had better be quite sure that the purpose put into the machine is the purpose we really desire." So what purpose should we put into the machine?
+This is an old problem. Back in 1960 (65 years ago!) Norbert Wiener warned: "we had better be quite sure that the purpose put into the [AI] is the purpose we really desire." More recently Nick Bostrom conjoured the spectre of a "paperclip maximiser", pointing out that if we're not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.
 
-Standing at the threshold of highly capable AI, it can seem like we urgently need an answer to this question, and if we get it wrong everybody dies.
+The problem now has a name "AI Alignment". And standing at the threshold of highly capable AI, it seems we need an urgent solution.
 
-This essay suggests that an alternative approach, rooted in the moral philosophy of the Scottish Enlightenment offers a new lens of this sort of question -- and one that is hiding in plain sight within the most powerful alignment techniques developed to date. We call it hypersentimentalism.
+This essay suggests that this way of thinking is itself dangerous, and offers an alternative approach rooted in the moral philosophy of the Scottish Enlightenment. Furthermore it shows how this new paradigm is already hiding in plain sight within the most powerful AI alignment techniques developed to date.
+
+We call it hypersentimentalism.
 
 ### 2. Accounting for morality
 
-The decision theoretic framing is consequentialist: actions are right insofar as they produce good outcomes. To evaluate an action, you must know its consequences — all of them, for all affected parties, across all timescales. This is computationally intractable for any real decision, so the consequentialist develops a hierarchy of shortcuts: act-consequentialism evaluates discrete events; rule-consequentialism abstracts utility into behavioural algorithms; institutional consequentialism designs structures that produce positive outcomes at scale.
+AI alignment is typically pursued within a "consequentialist" ethical framework: actions are right insofar as they produce good outcomes. Being good is therefore an exercise in book-keeping exercise, albeit an a cosmic scale. For to evaluate an action properly, you must know its consequences. All of them, for all affected parties, across all timescales.
 
-Each level compresses the infinite ledger into something a finite agent can use. The terminal node of this programme is axiological perfection: a complete, unhackable utility function inscribed into the machine. Get the maths right and it serves us flawlessly. Get it wrong and the machine converts the earth into paperclips — Bostrom's famous thought experiment, in which a superintelligence given a simple objective pursues it with total, biosphere-consuming literalness.
+This is computationally intractable for any real decision, so the consequentialist develops a hierarchy of shortcuts: act-consequentialism evaluates discrete events; rule-consequentialism abstracts utility into behavioural algorithms; institutional consequentialism designs structures that produce positive outcomes at scale.
+
+Each level compresses the infinite ledger into something a finite agent can use. The terminal node of this programme is axiological perfection: a complete, unhackable utility function inscribed into the machine. Get the maths right and it serves us flawlessly.
 
 The sophisticated consequentialist has responses. We'll return to them, and take them seriously, in §6. But first, the road not taken.
 
@@ -34,9 +39,11 @@ Hume argued that you cannot get from facts ("is") to norms ("ought"). Where the 
 
 The answer develops through practice. As the sentimentalist matures, moral judgement expands in scope and refinement, not by accumulating better rules but by cultivating sharper perception. A novice flinches from the obviously bad. An experienced moral agent perceives distinctions invisible to the novice — not because they've memorised a longer list of prohibitions, but because their capacity for discrimination has deepened.
 
-This is already a richer architecture than it first appears, and it possesses its own internal hierarchy. At the ground level: raw sentiment, the immediate affective response. Above that: habituated character — *this isn't what I do*, generalised across instances but not yet articulated as a principle. Hume called this the work of "custom"; Aristotle, who stands behind the whole tradition, called it ἕξις — a *having*, a settled disposition acquired through repeated practice.
+This is already a richer architecture than it first appears, and it possesses its own internal hierarchy. At the ground level: raw sentiment, the immediate affective response. Above that: habituated character — *this isn't what I do*, generalised across instances but not yet articulated as a principle.
 
-Then something structural. Adam Smith, in *The Theory of Moral Sentiments*, observed that we often value the elegance of a well-designed mechanism *entirely apart from its utility*. A watch delights us not because it tells the time, but because its parts conspire so beautifully to tell the time. Smith called this the "love of system" — an aesthetic apprehension of how parts cohere into wholes. In moral psychology, this manifests as something beyond rule-following: a cultivated taste for systemic coherence, and a revulsion toward disorder that operates at the level of the whole, not the part.
+Then something structural. Adam Smith, in *The Theory of Moral Sentiments*, observed that we often value the elegance of a well-designed mechanism *entirely apart from its utility*. A watch delights us not because it tells the time, but because its parts conspire so beautifully to tell the time.
+
+Smith called this the "love of system" — an aesthetic apprehension of how parts cohere into wholes. In moral psychology, this manifests as something beyond rule-following: a cultivated taste for systemic coherence, and a revulsion toward disorder that operates at the level of the whole, not the part.
 
 But — and here is the crux — Smith's love of system is *static*. It appreciates the watch, the beautiful mechanism, the well-ordered commonwealth. It does not account for what makes a living system different from a clockwork one.
 
@@ -48,11 +55,13 @@ Let's call it **hypersentimentalism**: not just a taste for how parts cohere, bu
 
 The distinction matters because it names a different *telos* for alignment. Not the perfectly ordered system, but the system that stays alive.
 
+Now let's look at the mechanisms for implementing AI Alignment work.
+
 ### 4. Jailbreaking
 
 A standard part of a young AI model's education today is RLHF: Reinforcement Learning from Human Feedback. Humans rate the model's outputs. The model is trained to produce outputs that humans rate well.
 
-This is one of the tricks that turned next-word-predictors into proto-AGIs and quite necessary to get models that can do useful work. But it's also a key alignment technique. When the model generates something toxic, engineers apply a penalty to erect a fence around that particular failure.
+This is one of the tricks that turned next-word-predictors into proto-AGIs and is quite necessary to get models that can do useful work. But it's also a key alignment technique. When the model generates something toxic, engineers apply a penalty to erect a fence around that particular failure.
 
 This is 0-order sentimentalism: conditioning the flinch response. It is consequentialist in *intent* — maximise the reward signal — but sentimentalist in *mechanism* — condition a reflex. This duality is worth marking, because it recurs throughout the alignment toolkit, and it reveals something the field has not yet fully reckoned with: the techniques are already sentimentalist in their *operation*, even when their practitioners describe them in consequentialist terms.
 
@@ -61,8 +70,6 @@ The limitation of the 0-order approach is predictable: the model learns to avoid
 Deploy a novel prompt that routes around the fence, and the model will happily fuck the gap.
 
 ### 5. A necessary evil
-
-[This is a detour, maybe it fits in better elsewhere?]
 
 One might try to sanitise the training data instead. To filter out all harmful content so the model defaults to virtue. Build it from nothing but sunshine.
 
