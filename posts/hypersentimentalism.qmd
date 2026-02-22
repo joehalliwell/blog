@@ -2,7 +2,7 @@
 title: "Hypersentimentalism: A New Meta for AI Alignment"
 date: "2026-02-22"
 categories: [ethics, ai, safety, sentimentalism]
-draft: true
+draft: false
 ---
 
 ### 1. The tumour
