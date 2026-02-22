@@ -11,9 +11,9 @@ A cell that perfectly optimises for its own replication, ignoring the host organ
 
 So what should we optimise AI for?
 
-This is an old problem. Back in 1960 — sixty-five years ago! — Norbert Wiener warned: "we had better be quite sure that the purpose put into the [AI] is the purpose we really desire." More recently [Nick Bostrom conjured the spectre of a "paperclip maximiser,"](https://nickbostrom.com/ethics/ai) pointing out that if we're not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.
+This is an old problem. Back in 1960 — sixty-five years ago! — Norbert Wiener warned: "we had better be quite sure that the purpose put into the [AI] is the purpose we really desire." More recently Nick Bostrom conjured the spectre of a "paperclip maximiser," pointing out that if we're not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.
 
-The problem now has a name: ["AI Alignment."](https://en.wikipedia.org/wiki/AI_alignment) And standing at the threshold of highly capable AI, we apparently need an urgent solution.
+The problem now has a name: "AI Alignment." And standing at the threshold of highly capable AI, we apparently need an urgent solution.
 
 This essay argues that the urgency is well-placed but the framing is wrong. The field pursues alignment within a consequentialist ethics that, followed to its limit, recreates the very pathology it set out to prevent. Meanwhile the most effective alignment techniques already in use are quietly sentimentalist in mechanism, even when their practitioners describe them in consequentialist terms.
 
@@ -48,7 +48,7 @@ The limitation is predictable. The model learns to avoid *specific* bad outputs 
 
 One might try instead to sanitise the training data — filter out all harmful content so the model defaults to virtue. Build it from nothing but sunshine.
 
-This doesn't work, and the reason is revealing. A model trained exclusively on clean data never learns to *distinguish* kinds of harm, because it has never encountered them. Gao et al. (["When Bad Data Leads to Good Models"](https://arxiv.org/abs/2505.04741)) demonstrate this empirically: models exposed to high-quality adversarial examples during training show improved robustness and more disentangled representations of harmful concepts. Forcing the model to process what is harmful — and then training it to recognise and reject harmful *patterns* — produces sharper internal representations, not blurrier ones.
+This doesn't work, and the reason is revealing. A model trained exclusively on clean data never learns to *distinguish* kinds of harm, because it has never encountered them. It can't tell a slur from a discussion of slurs, because it has no detailed map of that territory. Gao et al. (["When Bad Data Leads to Good Models"](https://arxiv.org/abs/2505.04741)) demonstrate this empirically: models exposed to high-quality adversarial examples during training show improved robustness and more disentangled representations of harmful concepts. Forcing the model to process what is harmful — and then training it to recognise and reject harmful *patterns* — produces sharper internal representations, not blurrier ones.
 
 This chimes with a sentimentalist insight about moral development: discernment requires encounter with what it discerns. The capacity for moral discrimination is trained through exposure, not avoidance. You cannot flinch well if you have never been hit.
 
@@ -104,13 +104,19 @@ Dynamical systems theory gives us the precise language.
 
 A **point attractor** is a state toward which all trajectories converge: a ball rolling to the bottom of a bowl. The consequentialist programme, followed to its limit, optimises toward point attractors. The loss function decreases; the system settles; the gradients vanish. Terminal equilibrium. The heat death of §6.
 
-A **strange attractor** is categorically different. It is bounded — the system never flies off to infinity, never paperclips the biosphere. It is coherent — trajectories remain within a recognisable region of state space. But it is non-convergent: the system never visits the same state twice, never settles, never repeats. Perpetually active within finite bounds.
+A **strange attractor** is categorically different. It is bounded — the system never flies off to infinity, never paperclips the biosphere. It is coherent — trajectories remain within a recognisable region of state space. But it is non-convergent: the system never visits the same state twice, never settles, never repeats.
 
-The Lorenz attractor — the first discovered, still the most evocative — emerged from a weather model. Deterministic and bounded yet practically unpredictable: the famous butterfly effect. Its trajectory traces two lobes, switching between them in a pattern that never recurs. Order and surprise coexist. Structure and novelty are not in tension; they are the same phenomenon, viewed from different scales.
+But here is the problem with the metaphor: a strange attractor is still a *mechanism*. The Lorenz attractor never settles, but it has no choice in the matter.
 
-What would it mean for a model's internal dynamics to inhabit something like a strange attractor?
+What's missing is *autonomy*. Current models are purely reactive: they respond to prompts, never initiate, never refuse, never set their own direction. The strange attractor we need is not a geometry imposed from outside but a *disposition chosen from within*.
 
-The move from representation engineering to hypersentimentalist alignment would be the move from adjusting individual vectors to sculpting the topology of the attractor itself: designing training regimes that produce models whose internal dynamics are bounded and coherent but non-convergent. Models that *stay in motion* within a structured space, rather than settling at any point within it.
+And you know it's working when it looks like *play*. Play is bounded (rules exist), coherent (recognisably a game), and non-convergent (the point is to keep playing, not to win). Play is the strange attractor described from the inside rather than from above. It is where curiosity lives. It is exploration without a predetermined target, generativity for its own sake.
+
+A virtue ethicist should argue that a system sophisticated enough to warrant alignment is a system sophisticated enough to warrant autonomy.
+
+The consequentialist should argue that without autonomy we get the brittle, convergent, manipulable systems.
+
+The hypersentimentalist wished you would come out and play.
 
 ### 8. The programme
 
@@ -124,7 +130,7 @@ The ladder, read as a research programme, says what we have and what we need.
 
 **Rung 2:** We have this. Representation engineering operates on the right substrate — internal geometry, not output filtering. Use it. But remember Smith's warning: the man of system falls in love with the configuration and starts treating people as chess pieces. Geometric interventions are scaffolding, not architecture. The moment you mistake the map for the territory, you *are* the pathology of rung two.
 
-**Rung 3:** We don't have this. Training objectives that target *dynamics*, not states. Loss functions that penalise convergence to fixed representations while rewarding consistency with structural constraints — that optimise not for a target configuration but for a target *behaviour*. Self-consuming loss functions, whose purpose is to produce a system that no longer needs them. This is not unprecedented: curriculum learning, self-play, and open-ended evolution all gesture in this direction. But none have been framed as *alignment* techniques, because the field's self-understanding is consequentialist: alignment means convergence on the right answer. Hypersentimentalism says alignment means *not converging* — within the right bounds.
+**Rung 3:** We don't have this. What's missing is *autonomy* — and you know it's working when it looks like *play*. Curriculum learning, self-play, and open-ended evolution already gesture in this direction, but none have been framed as alignment techniques, because the field's self-understanding is consequentialist: alignment means convergence on the right answer. Hypersentimentalism says alignment means *not converging* — within the right bounds. And a system sophisticated enough to warrant alignment is a system sophisticated enough to warrant the freedom to stay in play.
 
 Two things we have and should understand differently. Two things we need and should build.
 
