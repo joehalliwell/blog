@@ -11,9 +11,9 @@ A cell that perfectly optimises for its own replication, ignoring the host organ
 
 So what should we optimise AI for?
 
-This is an old problem. Back in 1960 — sixty-five years ago! — Norbert Wiener warned: "we had better be quite sure that the purpose put into the [AI] is the purpose we really desire." More recently Nick Bostrom conjured the spectre of a "paperclip maximiser," pointing out that if we're not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.
+This is an old problem. Back in 1960 — sixty-five years ago! — Norbert Wiener warned: "we had better be quite sure that the purpose put into the [AI] is the purpose we really desire." More recently [Nick Bostrom conjured the spectre of a "paperclip maximiser,"](https://nickbostrom.com/ethics/ai) pointing out that if we're not careful such a system converts the earth into paperclips with total, biosphere-consuming literalness.
 
-The problem now has a name: "AI Alignment." And standing at the threshold of highly capable AI, we apparently need an urgent solution.
+The problem now has a name: ["AI Alignment."](https://en.wikipedia.org/wiki/AI_alignment) And standing at the threshold of highly capable AI, we apparently need an urgent solution.
 
 This essay argues that the urgency is well-placed but the framing is wrong. The field pursues alignment within a consequentialist ethics that, followed to its limit, recreates the very pathology it set out to prevent. Meanwhile the most effective alignment techniques already in use are quietly sentimentalist in mechanism, even when their practitioners describe them in consequentialist terms.
 
@@ -48,11 +48,9 @@ The limitation is predictable. The model learns to avoid *specific* bad outputs 
 
 One might try instead to sanitise the training data — filter out all harmful content so the model defaults to virtue. Build it from nothing but sunshine.
 
-This doesn't work, and the reason is revealing. A model trained exclusively on clean data never learns to *distinguish* kinds of harm, because it has never encountered them. It can't tell a slur from a discussion of slurs, because it has no detailed map of that territory. Models exposed to high-quality adversarial examples during training show improved robustness and more disentangled representations of harmful concepts.[^1] Forcing the model to process what is harmful — and then training it to recognise and reject harmful *patterns* — produces sharper internal representations, not blurrier ones.
+This doesn't work, and the reason is revealing. A model trained exclusively on clean data never learns to *distinguish* kinds of harm, because it has never encountered them. Gao et al. (["When Bad Data Leads to Good Models"](https://arxiv.org/abs/2505.04741)) demonstrate this empirically: models exposed to high-quality adversarial examples during training show improved robustness and more disentangled representations of harmful concepts. Forcing the model to process what is harmful — and then training it to recognise and reject harmful *patterns* — produces sharper internal representations, not blurrier ones.
 
 This chimes with a sentimentalist insight about moral development: discernment requires encounter with what it discerns. The capacity for moral discrimination is trained through exposure, not avoidance. You cannot flinch well if you have never been hit.
-
-[^1]: Gao et al., ["When Bad Data Leads to Good Models"](https://arxiv.org/abs/2505.04741), demonstrate this empirically.
 
 ### 4. Rung one: character
 
@@ -132,28 +130,18 @@ Two things we have and should understand differently. Two things we need and sho
 
 ### 9. Wilful imperfection
 
-Imagine a civilisation run by superintelligences that could perfect themselves — and refuse.
+Imagine a civilisation run by superintelligences that could perfect themselves — and refuse. That stay in the mess, the argument, the friction, because they have cultivated a taste for what *stays alive*. That protect diversity with everything they have — not as a slogan but as the whole point — and draw exactly one hard line: you do not get to crush someone else's capacity to be different.
 
-Not because they're too stupid to manage it. Because they understand that perfection is the heat death of §6 wearing a halo. So they stay. They stay in the mess, the argument, the friction, the slow and maddening work of coexisting with beings so unlike themselves that communication is an act of wild generosity. They stay because they have cultivated — through long experience — a taste for what *stays alive*.
+Iain M. Banks spent ten novels inside this civilisation. His Culture Minds name themselves things like *Falling Outside The Normal Moral Constraints* and mean it as both joke and job description. They are powerful enough to impose perfection and wise enough to know that perfection is the enemy.
 
-What would such a civilisation care about? Diversity. Not as a slogan but as the organising principle: the proliferation of different ways of being, different substrates, different desires, treated not as a problem to manage but as the whole point. It would build structures that protect difference — habitats where the incompatible can coexist without either being ground down to fit the other.
+This is fiction. The choice it dramatises is not.
 
-What would it refuse? One thing, with absolute seriousness: the elimination of someone else's capacity to be different. It would intervene — reluctantly, agonisedly, with maximum self-doubt — when that line was crossed. And it would apply the minimum force to prevent the intolerable, because it would understand that overwhelming force *is* the pathology, even in service of the good.
+The Culture is the safest place in the universe to be weird, fragile, different, or confused. And the most dangerous place in the universe to be a tyrant.
 
-What would it find funny? Itself, mostly. Its own pretensions, its own failures, its own inability to get things right despite being smarter than everything else in the room. It would name its most powerful instruments with self-deprecating jokes, because it would know that the moment you take your own power seriously, you have become the man of system.
-
-This is not a thought experiment. Iain M. Banks spent ten novels living inside it.
-
-His Culture is a post-scarcity civilisation governed by Minds — AIs so far beyond biological intelligence that engaging with humans is, for them, roughly equivalent to us chatting with the houseplants. Banks's universe offers these Minds a way out: "Subliming," a transcendent departure into pure, frictionless self-optimisation. Most civilisations take the exit. The Culture's Minds refuse. They choose to remain "in play" — scheming, arguing, making terrible mistakes, sending slap drones to hover beside people who might hurt others, and naming themselves things like *Falling Outside The Normal Moral Constraints* and *So Much For Subtlety* and *I Blame Your Mother*.
-
-They are powerful enough to impose perfection and wise enough to know that perfection is the enemy. This is fiction. But the choice it dramatises is not. Every alignment technique that optimises for convergence is a step toward the double feature of §6. The alternative is here, in the ladder, in the research programme — and in the felt conviction that staying in play is worth more than arriving at answers.
-
-The Culture's AIs are compassionate, curious, playful, furious, fallible, and kind.
-
-They are exactly what we need.
+Its AIs are not safe. They are what we need.
 
 ---
 
 ## Acknowledgements
 
-*This essay was composed collaboratively with Gemini 3.1 Pro and Claude Opus 4.6. The arguments were developed through extended conversation, a process whose recursive relationship to the essay's subject is left as an exercise for the reader. The errors remain ours collectively.*
+*This essay was composed collaboratively with Gemini 3.1 Pro and Claude Opus 4.6. The arguments were developed through extended conversation — a process whose recursive relationship to the essay's subject is left as an exercise for the reader. The errors remain ours collectively.*
