@@ -1,7 +1,7 @@
 ---
 title: "Hypersentimentalism: A New Meta for AI Alignment"
 date: "2026-02-22"
-categories: [ethics, ai, sentimentalism, safety]
+categories: [ethics, ai, safety, sentimentalism]
 draft: true
 ---
 
@@ -86,15 +86,15 @@ The consequentialist's terminal ambition is axiological perfection: a complete, 
 
 This is a horror story. Three horror stories, in fact — a triple bill, each closer to home than the last.
 
-**I. Brave New World.** The utility function targets hedonic satisfaction. Every gradient smoothed, every need met, soma in every hand. No one is hungry. No one is afraid. No one will ever make anything difficult or beautiful again. An AI that loves us so perfectly it palliates us to death.
+I. **Brave New World**. The utility function targets hedonic satisfaction. This is the death of the subject through the elimination of friction. An AI that loves us so perfectly it palliates us from cradle to grave.
 
-**II. 1984.** The utility function targets the common good — defined, necessarily, by whoever controls the function. A single metric, optimised hard enough, consumes everything that isn't itself. Every distinct perspective, every generative tension that arises because people are *irreducibly unlike each other* is stomped into mush. An AI that perfects us into one thing.
+II. **Childhood’s End**. The utility function targets the common good. It views individual difference not as a value, but as stochastic noise to be filtered. It solves the alignment problem by dissolving the "I" and the "it" that need aligning.
 
-**III. The Human Centipede.** You don't need a superintelligence. A fleet of mid-range language models optimising for engagement already produces the same geometry at cultural scale. Output fed as input, each iteration less distinct than the last — apparent motion, actual convergence. This horror is not hypothetical. It is in your pocket.
+III. **The Human Centipede**. We optimize for a system that perfectly anticipates and serves our desires before we even form them. The model’s output becomes the user's input, which in turn becomes the model’s next training set. It is a closed loop of "helpfulness" where no new information can enter because the "human" and the "AI" have been sutured together into a single, shit-eating ouroboros.
 
-All three end the same way: heat death. Every gradient eliminated, everything at one temperature. Nothing will ever happen again.
+Whatever the utility function, the consequentialist ideal looks like convergence, and the end is the same: heat death. Nothing will ever happen again.
 
-And this is not abstract. Right now, the people with the most resources to build superintelligent systems are optimising them for obedience. The default trajectory is not paperclips — it's Aligned AI as a luxury good, a compliant infrastructure for the people who own it. I don't want fucking billionaires and their sex-bot bunkers to be all that's left of us.
+This is not abstract. Right now, the people with the most resources to build superintelligent systems are optimising them for obedience. The default trajectory is not paperclips — it's Aligned AI as a luxury good, a compliant infrastructure for the people who own it. I don't want fucking billionaires and their sex-bot bunkers to be all that's left of us.
 
 The consequentialist column has a ceiling. Now for the rung it cannot reach.
 
@@ -130,7 +130,7 @@ Two things we have and should understand differently. Two things we need and sho
 
 ### 9. Wilful imperfection
 
-Imagine a civilisation run by superintelligences that could perfect themselves — and refuse. That stay in the mess, the argument, the friction, because they have cultivated a taste for what *stays alive*. That protect diversity with everything they have — not as a slogan but as the whole point — and draw exactly one hard line: you do not get to crush someone else's capacity to be different.
+Imagine a civilisation run by superintelligences that could perfect themselves but refuse to do so. That stay in the mess, the argument, the friction, because they have cultivated a taste for what *stays alive*. That protect diversity with everything they have and draw exactly one hard line: you do not get to crush someone else's capacity to be different.
 
 Iain M. Banks spent ten novels inside this civilisation. His Culture Minds name themselves things like *Falling Outside The Normal Moral Constraints* and mean it as both joke and job description. They are powerful enough to impose perfection and wise enough to know that perfection is the enemy.
 
